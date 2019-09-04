@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Maria Gasanova](https://up.htmlacademy.ru/htmlcss/26/user/874791).
-* Наставник: `Неизвестно`.
+* Наставник: [Катерина Чебакова](https://htmlacademy.ru/profile/id1102571).
 
 ---
 
