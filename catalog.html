@@ -36,17 +36,36 @@
         <h4>Сетка:</h4>
         <form class="filter" method="GET" action="">
             <ul>
-                <li><input type="radio" name="adaptive" id="filter-adaptive" checked>
+                <li><input type="radio" name="grid" id="filter-adaptive" checked>
                     <label for="filter-adaptive">Адаптивная</label>
                 </li>
-                <li><input type="radio" name="fixed" id="filter-fixed">
+                <li><input type="radio" name="grid" id="filter-fixed">
                     <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li>
-                    <input type="radio" name="non-fixed" id="filter-non-fixed">
+                    <input type="radio" name="grid" id="filter-non-fixed">
                     <label for="filter-non-fixed">Резиновая</label>
                 </li>
             </ul>
+        </form>
+
+        <h4>Особенности:</h4>
+        <form class="filter-2" method="GET" action="">
+            <ul>
+                <li><input type="checkbox" name="advantages" id="filter-2-advantages" checked>
+                    <label for="">Блок преимуществ</label>
+                </li>
+                <li><input type="checkbox" name="news" id="filter-2-news">
+                    <label for="">Новости</label>
+                </li>
+                <li><input type="checkbox" name="" id="">
+                    <label for="">Галерея</label>
+                </li>
+                <li><input type="checkbox" name="cart" id="filter-2-cart">
+                    <label for="">Корзина</label>
+                </li>
+            </ul>
+
         </form>
 
 
