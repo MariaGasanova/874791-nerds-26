@@ -27,11 +27,19 @@
 
     <main>
         <aside>
-            <h3><b>Стоимость:</b></h3>
-            <p>от</p>0<input type="range" id="numbers" min="0" max="1500">1500
-            <p>до</p>
+
+            <h3 class="filter">Стоимость:</h3>
+            <div>
+                <input class="slider" type="range" id="slired" min="0" max="1500">
+                <p>от</p>
+                <input type="number" min="0" max="1500" placeholder="0">
+                <p>до</p>
+                <input type="number" min="0" max="1500" placeholder="1500">
+
+            </div>
+
             <h4>Сетка:</h4>
-            <form class="filter" method="GET" action="">
+            <form class="filter-1" method="GET" action="">
                 <ul>
                     <li><input type="radio" name="grid" id="filter-adaptive" checked>
                         <label for="filter-adaptive">Адаптивная</label>
