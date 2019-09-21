@@ -26,6 +26,43 @@
     </header>
 
     <main>
+        <aside>
+            <h3><b>Стоимость:</b></h3>
+            <p>от</p>0<input type="range" id="numbers" min="0" max="1500">1500
+            <p>до</p>
+            <h4>Сетка:</h4>
+            <form class="filter" method="GET" action="">
+                <ul>
+                    <li><input type="radio" name="grid" id="filter-adaptive" checked>
+                        <label for="filter-adaptive">Адаптивная</label>
+                    </li>
+                    <li><input type="radio" name="grid" id="filter-fixed">
+                        <label for="filter-fixed">Фиксированная</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="grid" id="filter-non-fixed">
+                        <label for="filter-non-fixed">Резиновая</label>
+                    </li>
+                </ul>
+                <h4>Особенности:</h4>
+                <ul>
+                    <li><input type="checkbox" name="advantages" id="filter-advantages" checked>
+                        <label for="">Блок преимуществ</label>
+                    </li>
+                    <li><input type="checkbox" name="news" id="filter-news" checked>
+                        <label for="">Новости</label>
+                    </li>
+                    <li><input type="checkbox" name="gallery" id="filter-gallery">
+                        <label for="">Галерея</label>
+                    </li>
+                    <li><input type="checkbox" name="cart" id="filter-cart">
+                        <label for="">Корзина</label>
+                    </li>
+                </ul>
+
+            </form>
+            <button type="button">Показать</button>
+        </aside>
 
         <form method="GET" action="">
             <div>
@@ -51,22 +88,21 @@
             </div>
 
             <h4>Особенности:</h4>
-            <div>
-                <ul>
-                    <li><input type="checkbox" name="advantages" id="filter-advantages" checked>
-                        <label for="">Блок преимуществ</label>
-                    </li>
-                    <li><input type="checkbox" name="news" id="filter-news" checked>
-                        <label for="">Новости</label>
-                    </li>
-                    <li><input type="checkbox" name="gallery" id="filter-gallery">
-                        <label for="">Галерея</label>
-                    </li>
-                    <li><input type="checkbox" name="cart" id="filter-cart">
-                        <label for="">Корзина</label>
-                    </li>
-                </ul>
-            </div>
+            <ul>
+                <li><input type="checkbox" name="advantages" id="filter-advantages" checked>
+                    <label for="">Блок преимуществ</label>
+                </li>
+                <li><input type="checkbox" name="news" id="filter-news" checked>
+                    <label for="">Новости</label>
+                </li>
+                <li><input type="checkbox" name="gallery" id="filter-gallery">
+                    <label for="">Галерея</label>
+                </li>
+                <li><input type="checkbox" name="cart" id="filter-cart">
+                    <label for="">Корзина</label>
+                </li>
+            </ul>
+
         </form>
         <button type="button">Показать</button>
 
