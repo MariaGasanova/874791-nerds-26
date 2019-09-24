@@ -7,26 +7,29 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна«Nerds»"></a>
-            <ul>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна «Nerds»"></a>
+            <ul class="site-navigation">
                 <li><a href="design-studio.html">Студия</a></li>
-                <li><a href="">Клиенты</a></li>
+                <li><a href="customers.html">Клиенты</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <ul>
+            <ul class="cart">
                 <li>
-                    <button type="button">Корзина</button>
+                    <a class="cart-link" href="cart.html">Корзина</a>
+                </li>
+                <li>
+                    <img src="img/basket-icon.svg" alt="Изображение корзины">
                 </li>
             </ul>
-            <img src="img/basket-icon.svg" alt="Иконка корзины">
-
+            <h1>Магазин готовых шаблонов</h1>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <aside class="filter">
 
             <h3>Стоимость:</h3>
@@ -132,17 +135,40 @@
                     <a href=" ">9 900 руб.</a>
                 </li>
             </ul>
-            <ul>
+            <ul class="pages">
                 <li><a>1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">Следующая</a></li>
             </ul>
         </section>
+        <section class="contacts">
+            <p>NЁRDS DESIGN STUDIO 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75
+            </p>
+            <p><img src="img/2.jpg" alt="Карта"></p>
+            <p><img src="img/map-marker.png" width="300" height="146" alt="Метка на карте"></p>
 
+            <h1>Напишите нам</h1>
+            <form class="write-back-form" action="https=//echo.htmlacademy.ru" method="POST">
+                <p class="write-back-item">
+                    <label for="write-back-name">Ваше имя:</label>
+                    <input id="write-back-name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p class="write-back-item">
+                    <label for="write-back-email">Ваш e-mail:</label>
+                    <input id="write-back-email" type="text" name="email" placeholder="email@example.com">
+                </p>
+                <p class="write-back-item">
+                    <label for="write-back-text">Текст письма:</label>
+                    <input id="write-back-text" type="text" name="text" placeholder="В свободной форме">
+                </p>
+                <button class="button" type="submit">Напишите нам</button>
+            </form>
+            <button class="write-back-form-close">Закрыть</button>
+        </section>
     </main>
     <footer>
-        <div>
+        <div class="social-media">
             <a href="#">Вконтакте</a>
             <img src="img/vk-icon.svg" alt="Иконка Вконтакте">
             <a href="# ">Фейсбук</a>
