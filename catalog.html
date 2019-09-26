@@ -29,9 +29,9 @@
     <main class="container">
         <aside class="filter">
 
-            <h3>Стоимость:</h3>
-            <div>
-                <input class="slider" type="range " id="slider" min="0" max="1500">
+            <h3 class="filter-item">Стоимость:</h3>
+            <div class="filter-item-slider">
+                <input class="slider" type="range" id="slider" min="0" max="1500">
                 <span>от</span>
                 <input class="price-from" type="number" min="0" max="1500" placeholder="0">
                 <span>до</span>
@@ -39,138 +39,139 @@
 
             </div>
 
-            <h4>Сетка:</h4>
-            <form class="filter-1 " method="GET" action=" ">
-                <ul>
-                    <li><input type="radio" name="grid" id="filter-adaptive" checked>
+            <h3 class="filter-item">Сетка:</h3>
+            <form class="filter" method="POST" action=" ">
+                <ul class="filter-radio">
+                    <li class="filter-adaptive"><input type="radio" name="grid" id="filter-adaptive" checked>
                         <label for="filter-adaptive ">Адаптивная</label>
                     </li>
-                    <li><input type="radio" name="grid" id="filter-fixed">
+                    <li class="filter-fixed"><input type="radio" name="grid" id="filter-fixed">
                         <label for="filter-fixed ">Фиксированная</label>
                     </li>
-                    <li>
+                    <li class="filter-non-fixed">
                         <input type="radio" name="grid" id="filter-non-fixed">
                         <label for="filter-non-fixed">Резиновая</label>
                     </li>
                 </ul>
-                <h4>Особенности:</h4>
-                <ul>
-                    <li><input type="checkbox" name="advantages" id="filter-advantages" checked>
+
+                <h3 class="filter-item">Особенности:</h3>
+                <ul class="filter-checkbox">
+                    <li class="filter-advantages"><input type="checkbox" name="advantages" id="filter-advantages" checked>
                         <label for="filter-advantages ">Блок преимуществ</label>
                     </li>
-                    <li><input type="checkbox" name="news" id="filter-news">
-                        <label for="filter-news ">Новости</label>
+                    <li class="filter-news"><input type="checkbox" name="news" id="filter-news">
+                        <label for="filter-news">Новости</label>
                     </li>
-                    <li><input type="checkbox" name="gallery" id="filter-gallery" сhecked>
+                    <li class="filter-gallery"><input type="checkbox" name="gallery" id="filter-gallery" сhecked>
                         <label for="filter-gallery">Галерея</label>
                     </li>
-                    <li><input type="checkbox" name="cart" id="filter-cart">
+                    <li class="filter-cart"><input type="checkbox" name="cart" id="filter-cart">
                         <label for="filter-cart">Корзина</label>
                     </li>
                 </ul>
             </form>
-            <button type="button">Показать</button>
+            <button class="button" type="submit">Показать</button>
         </aside>
 
-        <section>
-            <h4 class="sort">СОРТИРОВАТЬ:</h4>
-            <ul>
+        <section class="sort">
+            <h3 class="sort-item">СОРТИРОВАТЬ:</h3>
+            <ul class="sort-list">
                 <li>По цене</li>
                 <li>По типу</li>
                 <li>По названию</li>
             </ul>
-
         </section>
 
-        <section>
-            <h5>Sedona</h5>
-            <ul>
+        <section class="site-list">
+            <h4>Sedona</h4>
+            <ul class="site-item">
                 <li>
                     <p>Информационный сайт <br>для туристов</p>
                     <a href=" ">9 900 руб.</a>
                 </li>
             </ul>
 
-            <h5>Barbershop</h5>
-            <ul>
+            <h4>Barbershop</h4>
+            <ul class="site-item">
                 <li>
                     <p>Сайт салона красоты.<br>Для мужчин,да.</p>
-                    <a href=" ">9 900 руб.</a>
+                    <a href="">9 900 руб.</a>
                 </li>
             </ul>
 
-            <h5>A Plus</h5>
-            <ul>
+            <h4>A Plus</h4>
+            <ul class="site-item">
                 <li>
                     <p>Лендинг курсов повышения<br> квалификации</p>
                     <a href=" ">9 900 руб.</a>
                 </li>
             </ul>
 
-            <h5>Pink App</h5>
-            <ul>
+            <h4>Pink App</h4>
+            <ul class="site-item">
                 <li>
                     <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
                     <a href=" ">9 900 руб.</a>
                 </li>
             </ul>
 
-            <h5>MISHKA</h5>
-            <ul>
+            <h4>MISHKA</h4>
+            <ul class="site-item">
                 <li>
                     <p>Интернет-магазин <br>вязаных игрушек</p>
                     <a href=" ">9 900 руб.</a>
                 </li>
             </ul>
 
-            <h5>КВАСТ</h5>
-            <ul>
+            <h4>КВАСТ</h4>
+            <ul class="site-item">
                 <li>
                     <p>Промо-сайт производителя <br>крафтового кваса</p>
                     <a href=" ">9 900 руб.</a>
                 </li>
             </ul>
-            <ul class="pages ">
+            <ul class="pages">
                 <li><a>1</a></li>
                 <li><a href="# ">2</a></li>
                 <li><a href="# ">3</a></li>
                 <li><a href="# ">Следующая</a></li>
             </ul>
         </section>
-        <section class="contacts ">
+
+        <section class="contacts">
             <p>NЁRDS DESIGN STUDIO 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75
             </p>
-            <button class="button " type="submit ">Напишите нам</button>
-            <p><img src="img/2.jpg " alt="Карта "></p>
-            <p><img src="img/map-marker.png " width="300 " height="146 " alt="Метка на карте "></p>
+            <button class="button" type="submit">Напишите нам</button>
+            <p><img src="img/2.jpg" alt="Карта"></p>
+            <p><img src="img/map-marker.png" width="300" height="146" alt="Метка на карте"></p>
 
 
             <h4>Напишите нам</h4>
-            <form class="write-back-form " action="https=//echo.htmlacademy.ru " method="POST ">
+            <form class="write-back-form" action="https=//echo.htmlacademy.ru" method="POST ">
                 <p class="write-back-item ">
-                    <label for="write-back-name ">Ваше имя:</label>
-                    <input id="write-back-name " type="text " name="name " placeholder="Имя Фамилия ">
+                    <label for="write-back-name">Ваше имя:</label>
+                    <input id="write-back-name" type="text" name="name" placeholder="Имя Фамилия">
                 </p>
-                <p class="write-back-item ">
-                    <label for="write-back-email ">Ваш e-mail:</label>
-                    <input id="write-back-email " type="text " name="email " placeholder="email@example.com ">
+                <p class="write-back-item">
+                    <label for="write-back-email">Ваш e-mail:</label>
+                    <input id="write-back-email" type="text" name="email" placeholder="email@example.com">
                 </p>
                 <p class="write-back-item ">
                     <label for="write-back-text ">Текст письма:</label>
-                    <input id="write-back-text " type="text " name="text " placeholder="В свободной форме ">
+                    <input id="write-back-text" type="text" name="text" placeholder="В свободной форме">
                 </p>
-                <button class="button " type="submit ">Отправить</button>
+                <button class="button" type="submit">Отправить</button>
             </form>
-            <button class="write-back-form-close ">Закрыть</button>
+            <button class="write-back-form-close">Закрыть</button>
         </section>
     </main>
     <footer>
-        <div class="social-media ">
-            <a href="# ">Вконтакте</a>
+        <div class="social-media">
+            <a href="#">Вконтакте</a>
             <img src="img/vk-icon.svg " alt="Иконка Вконтакте ">
             <a href="# ">Фейсбук</a>
             <img src="img/fb-icon.svg " alt="Иконка Фейсбук ">
-            <a href="# ">Инстаграмм</a>
+            <a href="#">Инстаграмм</a>
             <img src="img/insta-icon.svg " alt="Иконка инстаграмм ">
             <p>Давайте дружить, это выгодно!</p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
