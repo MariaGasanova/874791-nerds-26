@@ -16,3 +16,24 @@ body {
 a {
     text-decoration: none;
 }
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: #FB565A;
+    border: none;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #EEEEEE;
+}
+
+.site-navigation {
+    list-style: none;
+}
