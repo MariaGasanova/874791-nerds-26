@@ -19,6 +19,7 @@ a {
 
 .button {
     font: inherit;
+    line-height: 18px;
     text-align: center;
     color: #ffffff;
     vertical-align: middle;
@@ -34,6 +35,10 @@ a {
     background-color: #EEEEEE;
 }
 
+.main-navigation nav {
+    display: inline-block;
+}
+
 .site-navigation {
     list-style: none;
 }
@@ -45,6 +50,7 @@ a {
 
 .site-navigation a {
     color: #000000;
+    display: inline-block;
 }
 
 .cart {
@@ -68,11 +74,13 @@ a {
 
 .advantages-list {
     list-style: none;
+    display: inline-block;
 }
 
 .advantages-list h3 {
     font-size: 24px;
     line-height: 30px;
+    text-transform: uppercase;
     color: #000000;
     background-color: #ffffff;
 }
@@ -80,8 +88,5 @@ a {
 .advantages-list p {
     font-size: inherit;
     line-height: 24px;
-}
-
-.advantages-picture {
-    display: inline-block;
+    text-transform: none;
 }
