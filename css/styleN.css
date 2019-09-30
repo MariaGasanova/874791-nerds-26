@@ -38,12 +38,17 @@ a {
     list-style: none;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #EEEEEE;
+}
+
 .site-navigation a {
     color: #000000;
 }
 
 .cart {
-    list-style: none
+    list-style: none;
 }
 
 .cart a {
@@ -59,4 +64,24 @@ a {
 
 .paging {
     display: none;
+}
+
+.advantages-list {
+    list-style: none;
+}
+
+.advantages-list h3 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.advantages-list p {
+    font-size: inherit;
+    line-height: 24px;
+}
+
+.advantages-picture {
+    display: inline-block;
 }
