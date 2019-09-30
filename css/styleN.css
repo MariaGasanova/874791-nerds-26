@@ -45,3 +45,18 @@ a {
 .cart {
     list-style: none
 }
+
+.cart a {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #EEEEEE;
+}
+
+.slider div {
+    display: none;
+}
+
+.paging div {
+    display: none;
+}
