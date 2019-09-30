@@ -39,30 +39,24 @@ a {
     display: inline-block;
 }
 
-.site-navigation {
-    list-style: none;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-    background-color: #EEEEEE;
-}
-
-.site-navigation a {
-    color: #000000;
-    display: inline-block;
-}
-
+.site-navigation,
 .cart {
     list-style: none;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart a:focus {
+    background-color: #EEEEEE;
+}
+
+.site-navigation a,
 .cart a {
     font-size: 16px;
     line-height: 30px;
     color: #000000;
     background-color: #EEEEEE;
-    background-image: url("img/")
+    display: inline-block;
 }
 
 .slider {
