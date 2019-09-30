@@ -28,6 +28,10 @@ a {
     border: none;
 }
 
+.list-li {
+    display: inline;
+}
+
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
@@ -35,7 +39,7 @@ a {
     background-color: #EEEEEE;
 }
 
-.main-navigation nav {
+.main-navigation>* {
     display: inline-block;
 }
 
@@ -44,9 +48,16 @@ a {
     list-style: none;
 }
 
+.main-header-logo a:hover,
 .site-navigation a:hover,
-.site-navigation a:focus,
-.cart a:focus {
+.cart a:hover {
+    color: #FB565A;
+    background-color: #EEEEEE;
+}
+
+.site-navigation a:active,
+.cart a:active {
+    color: rgba(0, 0, 0, 0.3);
     background-color: #EEEEEE;
 }
 
