@@ -81,28 +81,16 @@ a {
     display: none;
 }
 
-.advantages ul {
+.advantages-web,
+.advantages-apps,
+.advantages-presentation {
     display: inline-block;
-    width: 300px;
-    height: 146px;
 }
 
-.advantages-list {
+.advantages-web ul,
+.advantages-apps ul,
+.advantages-presentation ul {
     list-style: none;
-}
-
-.advantages-list h3 {
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.advantages-list p {
-    font-size: inherit;
-    line-height: 24px;
-    text-transform: none;
 }
 
 .studio {
