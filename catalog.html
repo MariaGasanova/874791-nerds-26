@@ -33,38 +33,43 @@
                     </a>
                 </li>
             </ul>
+            <h1 class="page-title">Магазин готовых шаблонов</h1>
         </nav>
-        <h1 class="page-title">Магазин готовых шаблонов</h1>
+
     </header>
 
     <main class="container">
         <aside class="filter">
-
-            <h3 class="filter-item">Стоимость:</h3>
-            <div class="filter-item-slider">
-                <input class="slider" type="range" id="slider" min="0" max="1500">
+            <fieldset class="slider">
+                <h3 class="filter-item">Стоимость:</h3>
+                <input class="slider-input" type="range" id="slider" min="0" max="1500">
                 <span>от</span>
                 <input class="price-from" type="number" min="0" max="1500" placeholder="0">
                 <span>до</span>
                 <input class="price-to" type="number" min="0" max="1500" placeholder="1500">
+            </fieldset>
 
-            </div>
+            <fieldset class="radio">
+                <h3 class="filter-item">Сетка:</h3>
+                <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
+                    <ul class="filter-radio">
+                        <li class="filter-adaptive">
+                            <input type="radio" name="grid" id="filter-adaptive" checked>
+                            <label for="filter-adaptive ">Адаптивная</label>
+                        </li>
+                        <li class="filter-fixed">
+                            <input type="radio" name="grid" id="filter-fixed">
+                            <label for="filter-fixed ">Фиксированная</label>
+                        </li>
+                        <li class="filter-non-fixed">
+                            <input type="radio" name="grid" id="filter-non-fixed">
+                            <label for="filter-non-fixed">Резиновая</label>
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
 
-            <h3 class="filter-item">Сетка:</h3>
-            <form class="filter" method="POST" action=" ">
-                <ul class="filter-radio">
-                    <li class="filter-adaptive"><input type="radio" name="grid" id="filter-adaptive" checked>
-                        <label for="filter-adaptive ">Адаптивная</label>
-                    </li>
-                    <li class="filter-fixed"><input type="radio" name="grid" id="filter-fixed">
-                        <label for="filter-fixed ">Фиксированная</label>
-                    </li>
-                    <li class="filter-non-fixed">
-                        <input type="radio" name="grid" id="filter-non-fixed">
-                        <label for="filter-non-fixed">Резиновая</label>
-                    </li>
-                </ul>
-
+            <fieldset class="checkbox">
                 <h3 class="filter-item">Особенности:</h3>
                 <ul class="filter-checkbox">
                     <li class="filter-advantages"><input type="checkbox" name="advantages" id="filter-advantages" checked>
@@ -80,8 +85,9 @@
                         <label for="filter-cart">Корзина</label>
                     </li>
                 </ul>
-            </form>
-            <button class="button" type="submit">Показать</button>
+                </form>
+                <button class="button" type="submit">Показать</button>
+            </fieldset>
         </aside>
 
         <section class="sort">
