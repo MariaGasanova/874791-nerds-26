@@ -140,7 +140,7 @@ a {
     display: none;
 }
 
-. slider {
+.slider {
     display: none;
 }
 
@@ -148,8 +148,34 @@ a {
     display: none;
 }
 
-.filter-radio {
+.filter-radio,
+.filter-checkbox {
     list-style: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283136;
+    text-transform: none;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-align: left;
+}
+
+.filter button {
+    font: inherit;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    background-color: #eeeeee;
+    width: 260px;
+    height: 50px;
 }
 
 .main-footer {
