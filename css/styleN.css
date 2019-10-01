@@ -36,7 +36,13 @@ a {
 }
 
 .main-navigation a,
-.main-navigation ul {
+.main-navigation ul,
+.main-navigation li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.cart li {
     display: inline-block;
 }
 
