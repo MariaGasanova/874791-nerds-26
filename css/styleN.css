@@ -97,7 +97,7 @@ a {
 .advantages-web button,
 .advantages-apps button,
 .advantages-presentation button {
-    display: inline;
+    display: inline-block;
     margin: 40px;
     width: 160px;
     height: 50px;
@@ -131,12 +131,16 @@ a {
     background-repeat: repeat;
 }
 
-.main-footer li {
+.main-footer div,
+.main-footer li,
+.main-footer b {
     display: inline-block;
+    margin: 45px;
 }
 
-.footer-social {
-    text-align: center;
+.footer-social,
+.footer-friends {
+    display: inline;
 }
 
 .footer-social ul {
