@@ -13,7 +13,13 @@ body {
     background-repeat: no-repeat;
 }
 
-.inner-page {}
+.inner-page {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("img/white-back.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
 
 a {
     text-decoration: none;
