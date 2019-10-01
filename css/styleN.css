@@ -81,9 +81,14 @@ a {
     display: none;
 }
 
+.advantages ul {
+    display: inline-block;
+    width: 300px;
+    height: 146px;
+}
+
 .advantages-list {
     list-style: none;
-    display: inline-block;
 }
 
 .advantages-list h3 {
@@ -128,19 +133,17 @@ a {
     background-repeat: repeat;
 }
 
+.main-footer li {
+    display: inline-block;
+}
+
 .footer-social {
     text-align: center;
 }
 
 .footer-social ul {
     list-style: none;
-    display: inline-block;
 }
-
-
-/*.footer-social li {
-    display: inline-block;
-}*/
 
 .footer-social b {
     font-size: 36px;
