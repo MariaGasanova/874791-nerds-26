@@ -13,6 +13,8 @@ body {
     background-repeat: no-repeat;
 }
 
+.inner-page {}
+
 a {
     text-decoration: none;
 }
