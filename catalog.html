@@ -41,7 +41,7 @@
     <main class="container">
         <aside class="filter">
             <fieldset class="slider">
-                <h3 class="filter-item">Стоимость:</h3>
+                <legend>Стоимость:</legend>
                 <input class="slider-input" type="range" id="slider" min="0" max="1500">
                 <span>от</span>
                 <input class="price-from" type="number" min="0" max="1500" placeholder="0">
@@ -50,7 +50,7 @@
             </fieldset>
 
             <fieldset class="radio">
-                <h3 class="filter-item">Сетка:</h3>
+                <legend>Сетка:</legend>
                 <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
                     <ul class="filter-radio">
                         <li class="filter-adaptive">
@@ -70,8 +70,11 @@
             </fieldset>
 
             <fieldset class="checkbox">
-                <h3 class="filter-item">Особенности:</h3>
+                <legend>Особенности:</legend>
                 <ul class="filter-checkbox">
+                    <li class="filter-slider"><input type="checkbox" name="filter-slider" id="filter-slider" checked>
+                        <label for="filter-slider ">Слайдер</label>
+                    </li>
                     <li class="filter-advantages"><input type="checkbox" name="advantages" id="filter-advantages" checked>
                         <label for="filter-advantages ">Блок преимуществ</label>
                     </li>
@@ -87,7 +90,7 @@
                 </ul>
                 </form>
             </fieldset>
-            <button class="button" type="submit">Показать</button>
+            <button class="button-grey" type="submit">Показать</button>
         </aside>
 
         <section class="sort">
