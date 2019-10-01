@@ -28,10 +28,6 @@ a {
     border: none;
 }
 
-.list-li {
-    display: inline;
-}
-
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
@@ -39,7 +35,8 @@ a {
     background-color: #EEEEEE;
 }
 
-.main-navigation>* {
+.main-navigation a,
+.main-navigation ul {
     display: inline-block;
 }
 
@@ -131,7 +128,13 @@ a {
 
 .footer-social ul {
     list-style: none;
+    display: inline-block;
 }
+
+
+/*.footer-social li {
+    display: inline-block;
+}*/
 
 .footer-social b {
     font-size: 36px;
@@ -152,6 +155,4 @@ a {
 .social-button {
     color: #ffffff;
     background-color: #e1e1e1;
-    border-radius: 50px;
-    display: inline-block;
 }
