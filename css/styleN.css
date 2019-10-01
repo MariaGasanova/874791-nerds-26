@@ -13,6 +13,15 @@ body {
     background-repeat: no-repeat;
 }
 
+h1 {
+    font-size: 55px;
+    line-height: 55px;
+    color: inherit;
+    text-transform: none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 .inner-page {
     color: #000000;
     background-color: #ffffff;
@@ -129,6 +138,18 @@ a {
 
 .contacts {
     display: none;
+}
+
+. slider {
+    display: none;
+}
+
+.sort {
+    display: none;
+}
+
+.filter-radio {
+    list-style: none;
 }
 
 .main-footer {
