@@ -194,19 +194,19 @@ a {
 }
 
 .filter .list {
-    width: 300px;
-    height: 13px;
     margin-right: 170px;
     font-size: 14px;
     font-weight: normal;
+    display: inline;
 }
 
 .filter ul {
     list-style: none;
 }
 
-.filter,
-.sort {
+.filter .price,
+.filter .sort,
+.filter .list {
     float: left;
 }
 
