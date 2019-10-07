@@ -19,6 +19,10 @@ body {
     box-sizing: border-box;
 }
 
+* * {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
 h1 {
     font-size: 55px;
     line-height: 55px;
@@ -48,40 +52,6 @@ a {
     text-transform: uppercase;
     background-color: #FB565A;
     border: none;
-}
-
-.vk-button {
-    background-image: url("img/vk-icon.png");
-    background-position: 31px 23px;
-    background-size: 30px;
-}
-
-.fb-button {
-    background-image: url("img/fb-icon.png");
-    background-position: 31 px 23px;
-    background-size: 30px;
-}
-
-.insta-button {
-    background-image: url("img/insta-icon.png");
-    background-position: 31 px 23px;
-    background-size: 30px;
-}
-
-.social-button {
-    color: #ffffff;
-    background-color: #e1e1e1;
-    border-radius: 50%;
-    width: 79px;
-    height: 79px;
-    display: block;
-    /* background-repeat: no-repeat; */
-}
-
-.social-button img {
-    display: block;
-    margin: 30px auto;
-    padding: 30px;
 }
 
 
@@ -241,28 +211,62 @@ legend {
     display: inline-block;
 }
 
+
+/* -----------FOOTER-------------*/
+
 .main-footer {
     color: #000000;
-    background-color: #ffffff;
+    /* background-color: green; */
     background-image: url("img/white-back.jpg");
     background-position: 0 0;
     background-repeat: repeat;
-    clear: both;
 }
 
-.main-footer div,
-.main-footer li,
-.main-footer b {
+.footer-social {
+    width: 475px;
+}
+
+.footer-friends {
+    width: 955px;
+}
+
+.footer-social,
+.footer-friends {
+    margin: 0;
+    padding: 0;
+    height: 100px;
     display: inline-block;
-    margin: 30px;
 }
 
 .footer-social ul {
     list-style: none;
+    margin: 10px 0 0 140px;
+    padding: 0;
+    display: inline-block;
 }
 
-.footer-friends {
-    text-align: center;
+.footer-social li {
+    list-style: none;
+    display: inline-block;
+    width: 79px;
+    height: 79px;
+    margin: 0 12px 0 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.social-button a {
+    display: block;
+}
+
+.social-button img {
+    display: block;
+    padding-top: 28px;
+    margin: 0 auto;
+}
+
+.footer-friends b,
+.footer-friends p {
     text-transform: none;
 }
 
@@ -280,7 +284,41 @@ legend {
     color: #444444;
 }
 
-.social-button {
-    color: #ffffff;
-    background-color: #e1e1e1;
+
+/*
+.footer-friends b {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #000000;
 }
+
+.footer-friends p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #444444;
+}
+
+
+.vk-button {
+    background-image: url("img/vk-icon.png");
+    background-position: 31px 23px;
+    background-size: 30px;
+}
+.fb-button {
+    background-image: url("img/fb-icon.png");
+    background-position: 31 px 23px;
+    background-size: 30px;
+}
+.insta-button {
+    background-image: url("img/insta-icon.png");
+    background-position: 31 px 23px;
+    background-size: 30px;
+}
+.social-button img {
+    display: block;
+    margin: 30px auto;
+    padding: 30px;
+}
+*/
