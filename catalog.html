@@ -6,42 +6,50 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/styleN.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleN.css">
 </head>
 
 <body class="inner-page">
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
-                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна «Nerds»"></a>
-            <ul class="site-navigation">
-                <li>
-                    <a href="design-studio.html">Студия</a>
-                </li>
-                <li>
-                    <a href="customers.html">Клиенты</a>
-                </li>
-                <li>
-                    <a href="catalog.html">Магазин</a>
-                </li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-            <ul class="cart">
-                <li>
-                    <a class="cart-item" href="cart.html">
-                        <img src="img/basket-icon.png" alt="Иконка корзины">Корзина
-                    </a>
-                </li>
-            </ul>
-            <h1 class="page-title">Магазин готовых шаблонов</h1>
+            <div class="main-header-logo">
+                <a href="index.html">
+                    <img src="img/nerds-logo.png" alt="Логотип студии дизайна «Nerds»">
+                </a>
+            </div>
+
+
+            <div class="site-navigation">
+                <div>
+                    <div class='st-nav-item'>
+                        <a href="design-studio.html">Студия</a>
+                    </div>
+                    <div class='st-nav-item'>
+                        <a href="customers.html">Клиенты</a>
+                    </div>
+                    <div class='st-nav-item'>
+                        <a href="catalog.html">Магазин</a>
+                    </div>
+                    <div class='st-nav-item'>
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a class="cart" href="cart.html">
+                <img src="img/basket-icon.png" alt="Иконка корзины">Корзина
+            </a>
+
         </nav>
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
 
     </header>
 
     <main class="container">
         <aside class="filter">
             <fieldset class="slider">
-                <legend>Стоимость:</legend>
+                <legend class="catalog-price">Стоимость:</legend>
                 <input class="slider-input" type="range" id="slider" min="0" max="1500">
                 <span>от</span>
                 <input class="price-from" type="number" min="0" max="1500" placeholder="0">
@@ -102,77 +110,81 @@
             </ul>
         </section>
 
-        <div class="catalog">
-            <section class="sedona">
-                <h4 class="site-sedona">Sedona</h4>
-                <ul class="site-item">
-                    <li>
-                        <p>Информационный сайт <br>для туристов</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+        <section class="catalogs">
 
-        <div class="catalog">
-            <section class="barbershop">
-                <h4 class="site-barbershop">Barbershop</h4>
-                <ul class="site-item">
-                    <li>
-                        <p>Сайт салона красоты.<br>Для мужчин,да.</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
 
-        <div class="catalog">
-            <section class="a-plus">
-                <h4 class="site-a-plus">A Plus</h4>
-                <ul class="site-item">
-                    <li>
-                        <p>Лендинг курсов повышения<br> квалификации</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+            <div class="catalog catalog-1">
+                <section class="sedona">
+                    <h4 class="site-sedona">Sedona</h4>
+                    <ul class="site-item">
+                        <li>
+                            <p>Информационный сайт <br>для туристов</p>
+                            <a class="button" href="#">9 900 руб.</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
-        <div class="catalog">
-            <section class="pink">
-                <h4 class="pink">Pink App</h4>
-                <ul class="site-item">
-                    <li>
-                        <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+            <div class="catalog catalog-2">
+                <section class="barbershop">
+                    <h4 class="site-barbershop">Barbershop</h4>
+                    <ul class="site-item">
+                        <li>
+                            <p>Сайт салона красоты.<br>Для мужчин,да.</p>
+                            <a class="button" href="#">9 900 руб.</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
-        <div class="catalog">
-            <section class="mishka">
-                <h4 class="site-mishka">MISHKA</h4>
-                <ul class="site-item">
-                    <li>
-                        <p>Интернет-магазин <br>вязаных игрушек</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+            <div class="catalog catalog-3">
+                <section class="a-plus">
+                    <h4 class="site-a-plus">A Plus</h4>
+                    <ul class="site-item">
+                        <li>
+                            <p>Лендинг курсов повышения<br> квалификации</p>
+                            <a class="button" href="#">9 900 руб.</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
 
-        <div class="catalog">
-            <section class="kvast">
-                <h4 class="site-kvast">КВАСТ</h4>
-                <ul class="site-item">
-                    <li>
-                        <p>Промо-сайт производителя <br>крафтового кваса</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+            <div class="catalog-4">
+                <section class="pink">
+                    <h4 class="pink">Pink App</h4>
+                    <ul class="site-item">
+                        <li>
+                            <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
+                            <a class="button" href="#">9 900 руб.</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="catalog-5">
+                <section class="mishka">
+                    <h4 class="site-mishka">MISHKA</h4>
+                    <ul class="site-item">
+                        <li>
+                            <p>Интернет-магазин <br>вязаных игрушек</p>
+                            <a class="button" href="#">9 900 руб.</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="catalog-6">
+                <section class="kvast">
+                    <h4 class="site-kvast">КВАСТ</h4>
+                    <ul class="site-item">
+                        <li>
+                            <p>Промо-сайт производителя <br>крафтового кваса</p>
+                            <a class="button" href="#">9 900 руб.</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
 
         <div>
             <ul class="page">
