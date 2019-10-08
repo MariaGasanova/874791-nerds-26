@@ -151,11 +151,6 @@ a {
     display: none;
 }
 
-.catalogs {
-    width: 760px;
-    display: inline-block;
-}
-
 .slider {
     display: none;
 }
@@ -174,7 +169,7 @@ a {
     color: #000000;
     font-weight: bold;
     font-size: 18px;
-    width: 1180px;
+    /*width: 1180px;*/
 }
 
 .filter .price {
@@ -185,7 +180,7 @@ a {
     margin-left: 140px;
 }
 
-.filter .sort-item {
+.filter .sort {
     width: 133px;
     height: 14px;
 }
@@ -203,17 +198,29 @@ a {
 
 .filter .price,
 .filter .sort,
-.filter .list {
+.filter .filter-list {
     float: left;
 }
 
-.filter-radio,
-.filter-checkbox {
+.filter-left .radio,
+.filter-left .checkbox {
     list-style: none;
     font-size: 16px;
     line-height: 20px;
     color: #283136;
     text-transform: none;
+    display: block;
+    width: 261px;
+}
+
+.filter-left button {
+    font: inherit;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    background-color: #eeeeee;
+    width: 260px;
+    height: 50px;
 }
 
 fieldset {
@@ -227,20 +234,15 @@ legend {
     text-align: left;
 }
 
-.filter button {
-    font: inherit;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    background-color: #eeeeee;
-    width: 260px;
-    height: 50px;
-}
-
 .catalog {
     width: 360px;
     height: 576px;
     background: #ccc;
+    display: inline-block;
+}
+
+.catalogs {
+    width: 760px;
     display: inline-block;
 }
 
