@@ -78,13 +78,10 @@ a {
 }
 
 .site-navigation {
+    color: #000000;
     margin-left: 200px;
     padding: 0;
     display: inline-block;
-}
-
-.site-navigation div {
-    /* display: inline-block; */
 }
 
 .st-nav-item {
@@ -193,8 +190,8 @@ a {
     height: 14px;
 }
 
-.filter .list {
-    margin-right: 170px;
+.filter-list li {
+    margin: 0 170px 0 0;
     font-size: 14px;
     font-weight: normal;
     display: inline;
