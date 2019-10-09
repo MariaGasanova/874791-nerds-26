@@ -162,14 +162,14 @@ a {
     width: 261px;
     margin-left: 139px;
     display: inline-block
-} */
+} 
 
 .filter {
     background: #EEEEEE;
     color: #000000;
     font-weight: bold;
     font-size: 18px;
-    /*width: 1180px;*/
+    width: 1180px;
 }
 
 .filter .price {
@@ -200,7 +200,7 @@ a {
 .filter .sort,
 .filter .filter-list {
     float: left;
-}
+} 
 
 .filter-left .radio,
 .filter-left .checkbox {
@@ -233,17 +233,34 @@ legend {
     color: #000000;
     text-align: left;
 }
+*/
+
+.filter-left {
+    display: block;
+    background-color: aquamarine;
+    width: 261px;
+    float: left;
+    margin-left: 139px;
+    margin-right: 70px;
+}
+
+.sort {
+    display: inline-block;
+    width: 720px;
+}
+
+.sort ul {
+    list-style: none;
+}
 
 .catalog {
     width: 360px;
     height: 576px;
     background: #ccc;
-    display: inline-block;
 }
 
 .catalogs {
     width: 760px;
-    display: inline-block;
 }
 
 
