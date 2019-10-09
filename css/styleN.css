@@ -151,10 +151,6 @@ a {
     display: none;
 }
 
-.slider {
-    display: none;
-}
-
 
 /*
 .sort {
@@ -253,14 +249,23 @@ legend {
     list-style: none;
 }
 
+.sort li {
+    display: inline-block;
+}
+
+.sort>div {
+    display: inline-block;
+}
+
 .catalog {
     width: 360px;
     height: 576px;
     background: #ccc;
 }
 
-.catalogs {
-    width: 760px;
+.catalogs>div {
+    display: inline-block;
+    width: 360px;
 }
 
 
@@ -337,8 +342,6 @@ legend {
     color: #444444;
 }
 
-
-/*
 .footer-friends b {
     font-size: 36px;
     font-weight: bold;
@@ -353,25 +356,26 @@ legend {
     color: #444444;
 }
 
-
 .vk-button {
     background-image: url("img/vk-icon.png");
     background-position: 31px 23px;
     background-size: 30px;
 }
+
 .fb-button {
     background-image: url("img/fb-icon.png");
     background-position: 31 px 23px;
     background-size: 30px;
 }
+
 .insta-button {
     background-image: url("img/insta-icon.png");
     background-position: 31 px 23px;
     background-size: 30px;
 }
+
 .social-button img {
     display: block;
     margin: 30px auto;
     padding: 30px;
 }
-*/
