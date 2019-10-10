@@ -323,12 +323,12 @@ legend {
     list-style: none;
 }
 
-.catalogs .catalog-1 {
-    margin-top: 75px;
-    margin-left: 60px;
-}
-
-.catalogs .catalog-2 {
+.catalogs .catalog-1,
+.catalogs .catalog-2,
+.catalogs .catalog-3,
+.catalogs .catalog-4,
+.catalogs .catalog-5,
+.catalogs .catalog-6 {
     margin-top: 75px;
     margin-left: 60px;
 }
