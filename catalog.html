@@ -49,8 +49,10 @@
     <main class="container">
 
         <aside class="filter-left">
-            <legend>Стоимость:</legend>
+
             <fieldset class="slider">
+                <legend>Стоимость:</legend>
+
                 <input class="slider-input" type="range" id="slider" min="0" max="1500">
                 <span>от</span>
                 <input class="price-from" type="number" min="0" max="1500" placeholder="0">
@@ -102,101 +104,104 @@
             <button class="button button-grey" type="submit">Показать</button>
         </aside>
 
-        <div class="sort">
-            <div>
-                <h3 class="sort-item">СОРТИРОВАТЬ:</h3>
+        <div class="catalog-container">
+            <div class="sort">
+                <div>
+                    <h3 class="sort-item">СОРТИРОВАТЬ:</h3>
+                </div>
+                <div>
+                    <ul class="list">
+                        <li class="price">По цене</li>
+                        <li class="type">По типу</li>
+                        <li class="name">По названию</li>
+                    </ul>
+                </div>
             </div>
+
+            <section class="catalogs">
+                <div class="catalog catalog-1">
+                    <section class="sedona">
+                        <h4 class="site-sedona">Sedona</h4>
+                        <ul class="site-item">
+                            <li>
+                                <p>Информационный сайт <br>для туристов</p>
+                                <a class="button" href="#">9 900 руб.</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="catalog catalog-2">
+                    <section class="barbershop">
+                        <h4 class="site-barbershop">Barbershop</h4>
+                        <ul class="site-item">
+                            <li>
+                                <p>Сайт салона красоты.<br>Для мужчин,да.</p>
+                                <a class="button" href="#">9 900 руб.</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="catalog catalog-3">
+                    <section class="a-plus">
+                        <h4 class="site-a-plus">A Plus</h4>
+                        <ul class="site-item">
+                            <li>
+                                <p>Лендинг курсов повышения<br> квалификации</p>
+                                <a class="button" href="#">9 900 руб.</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="catalog catalog-4">
+                    <section class="pink">
+                        <h4 class="pink">Pink App</h4>
+                        <ul class="site-item">
+                            <li>
+                                <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
+                                <a class="button" href="#">9 900 руб.</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="catalog catalog-5">
+                    <section class="mishka">
+                        <h4 class="site-mishka">MISHKA</h4>
+                        <ul class="site-item">
+                            <li>
+                                <p>Интернет-магазин <br>вязаных игрушек</p>
+                                <a class="button" href="#">9 900 руб.</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="catalog catalog-6">
+                    <section class="kvast">
+                        <h4 class="site-kvast">КВАСТ</h4>
+                        <ul class="site-item">
+                            <li>
+                                <p>Промо-сайт производителя <br>крафтового кваса</p>
+                                <a class="button" href="#">9 900 руб.</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </section>
+
             <div>
-                <ul class="list">
-                    <li class="price">По цене</li>
-                    <li class="type">По типу</li>
-                    <li class="name">По названию</li>
+                <ul class="page">
+                    <li><a class="page-button first">1</a></li>
+                    <li><a class="page-button second" href="# ">2</a></li>
+                    <li><a class="page-button third" href="# ">3</a></li>
+                    <li><a class="page-button next" href="# ">Следующая</a></li>
                 </ul>
             </div>
         </div>
 
-        <section class="catalogs">
-            <div class="catalog catalog-1">
-                <section class="sedona">
-                    <h4 class="site-sedona">Sedona</h4>
-                    <ul class="site-item">
-                        <li>
-                            <p>Информационный сайт <br>для туристов</p>
-                            <a class="button" href="#">9 900 руб.</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="catalog catalog-2">
-                <section class="barbershop">
-                    <h4 class="site-barbershop">Barbershop</h4>
-                    <ul class="site-item">
-                        <li>
-                            <p>Сайт салона красоты.<br>Для мужчин,да.</p>
-                            <a class="button" href="#">9 900 руб.</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="catalog catalog-3">
-                <section class="a-plus">
-                    <h4 class="site-a-plus">A Plus</h4>
-                    <ul class="site-item">
-                        <li>
-                            <p>Лендинг курсов повышения<br> квалификации</p>
-                            <a class="button" href="#">9 900 руб.</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="catalog catalog-4">
-                <section class="pink">
-                    <h4 class="pink">Pink App</h4>
-                    <ul class="site-item">
-                        <li>
-                            <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
-                            <a class="button" href="#">9 900 руб.</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="catalog catalog-5">
-                <section class="mishka">
-                    <h4 class="site-mishka">MISHKA</h4>
-                    <ul class="site-item">
-                        <li>
-                            <p>Интернет-магазин <br>вязаных игрушек</p>
-                            <a class="button" href="#">9 900 руб.</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="catalog catalog-6">
-                <section class="kvast">
-                    <h4 class="site-kvast">КВАСТ</h4>
-                    <ul class="site-item">
-                        <li>
-                            <p>Промо-сайт производителя <br>крафтового кваса</p>
-                            <a class="button" href="#">9 900 руб.</a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </section>
-
-        <div>
-            <ul class="page">
-                <li><a>1</a></li>
-                <li><a href="# ">2</a></li>
-                <li><a href="# ">3</a></li>
-                <li><a href="# ">Следующая</a></li>
-            </ul>
-        </div>
 
         <section class="contacts">
             <p>NЁRDS DESIGN STUDIO 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75
