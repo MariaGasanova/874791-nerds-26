@@ -209,13 +209,12 @@ a {
     float: left;
 } */
 
+
+/*
 .filter-left {
     padding-left: 125px;
     padding-top: 54px;
 }
-
-
-/*
 .filter-left .slider,*/
 
 .filter-left .radio,
@@ -234,21 +233,23 @@ a {
     list-style: none;
 }
 
-.filter-left .radio {
-    padding-top: 200px;
-}
-
-
-/*
 .filter-left .slider {
     text-transform: uppercase;
     letter-spacing: 0, 18px;
     text-align: left;
     padding-top: 70px;
-} */
+    visibility: hidden;
+}
 
 .filter-left .radio {
-    padding-top: 34px;
+    padding-top: 195px;
+}
+
+.filter-left .filter-adaptive,
+.filter-left .filter-fixed,
+.filter-left .filter-non-fixed {
+    padding-top: 16px;
+    padding-left: 23px;
 }
 
 .filter-left button {
@@ -270,6 +271,7 @@ legend {
     line-height: 30px;
     color: #000000;
     text-align: left;
+    text-transform: uppercase;
 }
 
 .filter-left {
