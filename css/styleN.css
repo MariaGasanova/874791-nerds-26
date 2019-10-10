@@ -59,51 +59,58 @@ a {
 
 .main-header {
     width: 100%;
-    background: #FB565A;
     padding: 49px 140px 0 140px;
+    vertical-align: middle;
 }
 
 .main-navigation {
-    margin-bottom: 49px;
-    /* height: 100px; */
     font-size: 16px;
     line-height: 30px;
     color: #000000;
-    background-color: #EEEEEE;
+}
+
+.main-navigation a {
+    color: #000000;
 }
 
 .main-header-logo {
-    height: 47px;
+    vertical-align: middle;
     display: inline-block;
 }
 
 .site-navigation {
     color: #000000;
-    margin-left: 200px;
-    padding: 0;
+    margin-left: 161px;
+    vertical-align: middle;
     display: inline-block;
 }
 
 .st-nav-item {
+    margin-left: 38px;
     display: inline-block;
     list-style: none;
 }
 
 .cart {
+    vertical-align: middle;
     display: inline-block;
+    margin-left: 250px;
+}
+
+.cart img {
+    vertical-align: middle;
+    margin-right: 25px;
 }
 
 .page-title {
     background: green;
     margin: 0;
+    padding-top: 65px;
+    padding-bottom: 110px;
 }
 
 
 /*--- HEADER END ----*/
-
-.slider {
-    display: none;
-}
 
 .paging {
     display: none;
@@ -196,8 +203,14 @@ a {
 .filter .sort,
 .filter .filter-list {
     float: left;
-} 
+} */
 
+.filter-left {
+    padding-left: 125px;
+    padding-top: 54px;
+}
+
+.filter-left .slider,
 .filter-left .radio,
 .filter-left .checkbox {
     list-style: none;
@@ -205,8 +218,19 @@ a {
     line-height: 20px;
     color: #283136;
     text-transform: none;
-    display: block;
+    display: inline-block;
     width: 261px;
+}
+
+.filter-left .slider {
+    text-transform: uppercase;
+    letter-spacing: 0, 18px;
+    text-align: left;
+    padding-top: 70px;
+}
+
+.filter-left .radio {
+    padding-top: 34px;
 }
 
 .filter-left button {
@@ -229,20 +253,30 @@ legend {
     color: #000000;
     text-align: left;
 }
-*/
 
 .filter-left {
-    display: block;
     background-color: aquamarine;
-    width: 261px;
+    width: 480px;
     float: left;
-    margin-left: 139px;
-    margin-right: 70px;
+}
+
+.catalog-container {
+    border: 1px dashed red;
+    display: inline-block;
+    width: 960px;
 }
 
 .sort {
     display: inline-block;
     width: 720px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.sort h3 {
+    padding-top: 37px;
+    padding-left: 56px;
 }
 
 .sort ul {
@@ -251,6 +285,9 @@ legend {
 
 .sort li {
     display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .sort>div {
