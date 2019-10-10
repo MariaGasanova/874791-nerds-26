@@ -229,6 +229,15 @@ a {
     width: 261px;
 }
 
+.filter-left .radio ul,
+.filter-left .checkbox ul {
+    list-style: none;
+}
+
+.filter-left .radio {
+    padding-top: 200px;
+}
+
 
 /*
 .filter-left .slider {
@@ -275,6 +284,29 @@ legend {
     width: 960px;
 }
 
+.catalog {
+    width: 360px;
+    height: 576px;
+    background: rosybrown;
+}
+
+.catalogs ul {
+    list-style: none;
+}
+
+.catalogs>div {
+    display: inline-block;
+    width: 360px;
+    margin-top: 75px;
+    margin-left: 60px;
+}
+
+.catalogs .catalog-2,
+.catalogs .catalog-4,
+.catalogs .catalog-6 {
+    margin-left: 36px;
+}
+
 .sort {
     display: inline-block;
     width: 720px;
@@ -309,28 +341,6 @@ legend {
 .sort-icons img {
     display: inline-block;
     margin-left: 10px;
-}
-
-.catalog {
-    width: 360px;
-    height: 576px;
-    background: rosybrown;
-}
-
-.catalogs>div {
-    display: inline-block;
-    width: 360px;
-    list-style: none;
-}
-
-.catalogs .catalog-1,
-.catalogs .catalog-2,
-.catalogs .catalog-3,
-.catalogs .catalog-4,
-.catalogs .catalog-5,
-.catalogs .catalog-6 {
-    margin-top: 75px;
-    margin-left: 60px;
 }
 
 .page {
