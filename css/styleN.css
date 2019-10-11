@@ -309,6 +309,15 @@ legend {
     margin-left: 36px;
 }
 
+.catalog-1 section {
+    background-image: url("img/img-sedona-jpg.jpg");
+    margin-top: -8px;
+}
+
+section h4 {
+    text-align: center;
+}
+
 .sort {
     display: inline-block;
     width: 720px;
