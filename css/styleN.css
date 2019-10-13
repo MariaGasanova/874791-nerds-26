@@ -243,6 +243,7 @@ a {
 
 .filter-left .radio {
     padding-top: 195px;
+    list-style-image: url("img/radio-off.png");
 }
 
 .filter-left .filter-adaptive,
@@ -287,9 +288,10 @@ legend {
 }
 
 .catalog {
-    width: 360px;
-    height: 576px;
-    background: rosybrown;
+    /* width: 360px;
+    height: 576px;*/
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
 }
 
 .catalogs ul {
