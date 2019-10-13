@@ -56,6 +56,27 @@ a {
     border: none;
 }
 
+.button-grey {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+  margin-top: 25px;
+}
+/*
+.button-catalog {
+    background-color: #fb565a;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    width: 200px;
+    height: 50px;*/
+}
+
 
 /*----- HEADER ------*/
 
@@ -350,16 +371,8 @@ fieldset {
 /* ASIDE END*/
 
 .catalog-container {
-    border: 1px dashed red;
     display: inline-block;
     width: 960px;
-}
-
-.catalog {
-    /* width: 360px;
-    height: 576px;*/
-    background: #ffffff;
-    border: 1px solid #e1e1e1;
 }
 
 .catalogs ul {
@@ -373,10 +386,18 @@ fieldset {
     margin-left: 60px;
 }
 
+/*
 .catalogs .catalog-2,
 .catalogs .catalog-4,
 .catalogs .catalog-6 {
     margin-left: 36px;
+} */
+
+.catalog {
+    /* width: 360px;
+    height: 576px;*/
+    background: #ffffff;
+    border: 1px solid #e1e1e1;
 }
 
 .catalog-body {
@@ -392,15 +413,27 @@ fieldset {
     height: 231px;
 }
 
+.catalog-marketing h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+
+.catalog-marketing p {
+   font-size: 16px;
+   font-weight: normal;
+   text-align: center;
+   text-transform: none;
+   color: #666666;
+}
 
 /* .catalog-1 section {
     background-image: url("img/img-sedona-jpg.jpg");
     margin-top: -8px;
 } */
 
-section h4 {
-    text-align: center;
-}
+/* Catalog Sort */
 
 .sort {
     display: inline-block;
@@ -433,10 +466,10 @@ section h4 {
     display: inline-block;
 }
 
-.sort-icons img {
+/*.sort-icons {
     display: inline-block;
     margin-left: 10px;
-}
+} */
 
 .page {
     list-style: none;
