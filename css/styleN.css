@@ -163,60 +163,44 @@ a {
 }
 
 
-/*
-.sort {
-    background: #FB565A;
-    width: 261px;
-    margin-left: 139px;
-    display: inline-block
-} 
+/* ASIDE START*/
 
-.filter {
-    background: #EEEEEE;
-    color: #000000;
-    font-weight: bold;
-    font-size: 18px;
-    width: 1180px;
-}
-
-.filter .price {
-    letter-spacing: 0, 18px;
-    line-height: 30px;
-    width: 120px;
-    height: 14px;
-    margin-left: 140px;
-}
-
-.filter .sort {
-    width: 133px;
-    height: 14px;
-}
-
-.filter-list li {
-    margin: 0 170px 0 0;
-    font-size: 14px;
-    font-weight: normal;
-    display: inline;
-}
-
-.filter ul {
-    list-style: none;
-}
-
-.filter .price,
-.filter .sort,
-.filter .filter-list {
-    float: left;
-} */
-
-
-/*
 .filter-left {
-    padding-left: 125px;
-    padding-top: 54px;
+    background-color: #ffffff;
+    width: 480px;
+    float: left;
+    padding: 0 20px 0 139px;
 }
-.filter-left .slider,*/
 
+.aside-item {
+    margin-top: 63px;
+    width: 261px;
+}
+
+.aside-item legend {
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.slider-input {
+    background: #ccc;
+    height: 81px;
+    display: flex;
+    justify-content: center;
+    padding: 0 19px;
+    margin-bottom: 13px;
+}
+
+.slider-input input {
+    width: 100%;
+}
+
+
+/* 
 .filter-left .radio,
 .filter-left .checkbox {
     list-style: none;
@@ -238,12 +222,10 @@ a {
     letter-spacing: 0, 18px;
     text-align: left;
     padding-top: 70px;
-    visibility: hidden;
 }
 
 .filter-left .radio {
     padding-top: 195px;
-    list-style-image: url("img/radio-off.png");
 }
 
 .filter-left .filter-adaptive,
@@ -267,19 +249,26 @@ fieldset {
     border: none;
 }
 
-legend {
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    text-align: left;
-    text-transform: uppercase;
+
+
+.radio-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-.filter-left {
-    background-color: aquamarine;
-    width: 480px;
-    float: left;
-}
+.radio-button {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/radio-on.png");
+    border: 1px solid black;
+    border-radius: 50%;
+} */
+
+
+/* ASIDE END*/
 
 .catalog-container {
     border: 1px dashed red;
@@ -311,10 +300,24 @@ legend {
     margin-left: 36px;
 }
 
-.catalog-1 section {
+.catalog-body {
+    /* background: #FB565A; */
+    padding-top: 345px;
+    height: 576px;
+    background-image: url("../img/img-sedona-jpg.jpg");
+}
+
+.catalog-marketing {
+    background: #ccc;
+    border: #FB565A solid 1px;
+    height: 231px;
+}
+
+
+/* .catalog-1 section {
     background-image: url("img/img-sedona-jpg.jpg");
     margin-top: -8px;
-}
+} */
 
 section h4 {
     text-align: center;
@@ -363,7 +366,6 @@ section h4 {
 
 .page>li {
     display: inline-block;
-    box-sizing: border-box;
 }
 
 

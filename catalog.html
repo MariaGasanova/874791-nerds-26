@@ -18,7 +18,6 @@
                 </a>
             </div>
 
-
             <div class="site-navigation">
                 <div class="st-nav-item">
                     <a href="design-studio.html">Студия</a>
@@ -46,69 +45,72 @@
     <main class="container">
 
         <aside class="filter-left">
-
-            <fieldset class="slider">
+            <fieldset class="slider aside-item">
                 <legend>Стоимость:</legend>
+                <div class="slider-input">
+                    <input type="range" id="slider" min="0" max="1500">
+                </div>
 
-                <input class="slider-input" type="range" id="slider" min="0" max="1500">
-                <span>от</span>
-                <input class="price-from" type="number" min="0" max="1500" placeholder="0">
-                <span>до</span>
-                <input class="price-to" type="number" min="0" max="1500" placeholder="1500">
+                <div class="slider-controls">
+                    <span>от</span>
+                    <input class="price-from" type="number" min="0" max="1500" placeholder="0">
+                    <span>до</span>
+                    <input class="price-to" type="number" min="0" max="1500" placeholder="1500">
+                </div>
             </fieldset>
 
-            <fieldset class="radio">
-                <form class="filter" method="POST" action="https://echo.htmlacademy.ru">
-                    <legend>Сетка:</legend>
-                    <ul class="filter-radio">
-                        <li class="filter-adaptive">
-                            <label for="filter-adaptive">
-                            <input type="radio" name="grid" id="filter-adaptive" checked>
-                            <img src="img/radio-on.png" alt="Кнопка выбрана">
+            <fieldset class="radio aside-item">
+
+                <legend>Сетка:</legend>
+                <ul class="filter-radio">
+                    <li class="filter-adaptive">
+                        <label class="filter filter-adaptive">
+                            <input class="radio-input" type="radio" name="grid" id="filter-adaptive" checked>
+                            <span class="radio-button"></span>
                             Адаптивная</label>
-                        </li>
-                        <li class="filter-fixed">
-                            <label for="filter-fixed">
-                            <input type="radio" name="grid" id="filter-fixed">
+                    </li>
+                    <li class="filter-fixed">
+                        <label class="filter filter-fixed">
+                            <input class="radio-input" type="radio" name="grid" id="filter-fixed">
+                            <span class="radio-button"></span>
                             Фиксированная</label>
-                        </li>
-                        <li class="filter-non-fixed">
-                            <label for="filter-non-fixed">
-                            <input type="radio" name="grid" id="filter-non-fixed">
-                            <img src="img/radio-off.png" alt="Кнопка выключена">
+                    </li>
+                    <li class="filter-non-fixed">
+                        <label class="filter filter-non-fixed">
+                            <input class="radio-input" type="radio" name="grid" id="filter-non-fixed">
+                            <span class="radio-button"></span>
                             Резиновая</label>
-                        </li>
-                    </ul>
-                </form>
+                    </li>
+                </ul>
             </fieldset>
 
-            <fieldset class="checkbox">
+            <fieldset class="checkbox  aside-item">
                 <legend>Особенности:</legend>
                 <ul class="filter-checkbox">
                     <li class="filter-slider">
-                        <label for="filter-slider">
-                        <input type="checkbox" name="filter-slider" id="filter-slider" checked>
-                        Слайдер</label>
+                        <label class="filter-slider">
+                            <input type="checkbox" name="filter-slider" id="filter-slider" checked>
+                            Слайдер</label>
                     </li>
                     <li class="filter-advantages">
-                        <label for="filter-advantages">
-                        <input type="checkbox" name="advantages" id="filter-advantages">
-                        Блок преимуществ</label>
+                        <label class="filter-advantages">
+                            <input type="checkbox" name="advantages" id="filter-advantages">
+                            Блок преимуществ</label>
                     </li>
                     <li class="filter-news">
-                        <label for="filter-news">
-                        <input type="checkbox" name="news" id="filter-news" checked>
-                        Новости</label>
+                        <label class="filter-news">
+                            <input type="checkbox" name="news" id="filter-news" checked>
+                            Новости</label>
                     </li>
                     <li class="filter-gallery">
-                        <label for="filter-gallery">
-                        <input type="checkbox" name="gallery" id="filter-gallery">
-                        Галерея</label>
+                        <label class="filter-gallery">
+                            <input type="checkbox" name="gallery" id="filter-gallery">
+                            Галерея</label>
                     </li>
                     <li class="filter-cart">
-                        <label for="filter-cart">
-                        <input type="checkbox" name="cart" id="filter-cart">
-                        Корзина</label>
+                        <label class="filter-cart">
+                            <input type="checkbox" name="cart" id="filter-cart">
+                            Корзина</label>
                     </li>
                 </ul>
                 </form>
@@ -129,8 +131,6 @@
                     </ul>
                 </div>
                 <div class="sort-icons">
-                    <img src="img/icon-down-dir.png" alt="Иконка вниз">
-                    <img src="img/icon-up-dir.png" alt="Иконка вверх">
                 </div>
             </div>
 
@@ -142,19 +142,21 @@
                         <img src="img/browser.png" alt="Иконка браузера">
                     </div>
 
-                    <div class="background">
-                        <img src="img/img-sedona-jpg.jpg" alt="Сайт Sedona">
+                    <div class="catalog-body">
+
+
+                        <section class="catalog-marketing">
+                            <h4 class="site-sedona">Sedona</h4>
+                            <ul class="site-item">
+                                <li>
+                                    <p>Информационный сайт <br>для туристов</p>
+                                    <a class="button" href="#">9 900 руб.</a>
+                                </li>
+                            </ul>
+                        </section>
+
                     </div>
 
-                    <section class="sedona">
-                        <h4 class="site-sedona">Sedona</h4>
-                        <ul class="site-item">
-                            <li>
-                                <p>Информационный сайт <br>для туристов</p>
-                                <a class="button" href="#">9 900 руб.</a>
-                            </li>
-                        </ul>
-                    </section>
 
                 </div>
 
@@ -291,6 +293,7 @@
             <button class="write-back-form-close">Закрыть</button>
         </section>
     </main>
+
     <footer class="main-footer">
         <div class="footer-social">
             <ul>
