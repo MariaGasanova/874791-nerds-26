@@ -74,8 +74,8 @@ a {
     text-align: center;
     color: #ffffff;
     width: 200px;
-    height: 50px;*/
-}
+    height: 50px;
+} */
 
 
 /*----- HEADER ------*/
@@ -394,10 +394,12 @@ fieldset {
 } */
 
 .catalog {
-    /* width: 360px;
-    height: 576px;*/
+    width: 360px;
+    height: 576px;
     background: #ffffff;
     border: 1px solid #e1e1e1;
+    background-image: url("../img/browser.png");
+    background-repeat: no-repeat;
 }
 
 .catalog-body {
@@ -407,25 +409,36 @@ fieldset {
     background-image: url("../img/img-sedona-jpg.jpg");
 }
 
-.catalog-marketing {
-    background: #ccc;
-    border: #FB565A solid 1px;
+.catalog-offer {
+    background: #eeee;
     height: 231px;
 }
 
-.catalog-marketing h4 {
+.catalog-offer h4 {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     color: #000000;
 }
 
-.catalog-marketing p {
+.catalog-offer p {
    font-size: 16px;
    font-weight: normal;
    text-align: center;
    text-transform: none;
    color: #666666;
+   padding-bottom: 30px;
+   margin-bottom: 20px;
+}
+/*
+.catalog-offer a {
+    background-color: #fb565a;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    width: 200px;
+    height: 50px; 8/
 }
 
 /* .catalog-1 section {
@@ -433,7 +446,7 @@ fieldset {
     margin-top: -8px;
 } */
 
-/* Catalog Sort */
+/*---CATALOG-----SORT---- */
 
 .sort {
     display: inline-block;
@@ -485,8 +498,7 @@ fieldset {
 
 .main-footer {
     color: #000000;
-    /* background-color: green; */
-    background-image: url("img/white-back.jpg");
+    background-image: url("../img/white-back.jpg");
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -569,19 +581,19 @@ fieldset {
 }
 
 .vk-button {
-    background-image: url("img/vk-icon.png");
+    background-image: url("../img/vk-icon.png");
     background-position: 31px 23px;
     background-size: 30px;
 }
 
 .fb-button {
-    background-image: url("img/fb-icon.png");
+    background-image: url("../img/fb-icon.png");
     background-position: 31 px 23px;
     background-size: 30px;
 }
 
 .insta-button {
-    background-image: url("img/insta-icon.png");
+    background-image: url("../img/insta-icon.png");
     background-position: 31 px 23px;
     background-size: 30px;
 }
