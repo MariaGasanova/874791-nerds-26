@@ -52,36 +52,34 @@
                 </div>
 
                 <div class="slider-controls">
-                    <span>от</span>
-                    <input class="price-from" type="number" min="0" max="1500" placeholder="0">
-                    <span>до</span>
-                    <input class="price-to" type="number" min="0" max="1500" placeholder="1500">
+                    <label>
+                        <span>от</span>
+                        <input class="price-from" type="number" min="0" max="1500" placeholder="0">
+                        <span>до</span>
+                        <input class="price-to" type="number" min="0" max="1500" placeholder="1500">
+                    </label>
+
                 </div>
             </fieldset>
 
             <fieldset class="radio aside-item">
 
                 <legend>Сетка:</legend>
-                <ul class="filter-radio">
-                    <li class="filter-adaptive">
-                        <label class="filter filter-adaptive">
-                            <input class="radio-input" type="radio" name="grid" id="filter-adaptive" checked>
-                            <span class="radio-button"></span>
-                            Адаптивная</label>
-                    </li>
-                    <li class="filter-fixed">
-                        <label class="filter filter-fixed">
-                            <input class="radio-input" type="radio" name="grid" id="filter-fixed">
-                            <span class="radio-button"></span>
-                            Фиксированная</label>
-                    </li>
-                    <li class="filter-non-fixed">
-                        <label class="filter filter-non-fixed">
-                            <input class="radio-input" type="radio" name="grid" id="filter-non-fixed">
-                            <span class="radio-button"></span>
-                            Резиновая</label>
-                    </li>
-                </ul>
+                <div class="grid-list">
+                    <label class="grid-label">
+                        <input class="radio-input" type="radio" checked>
+                        <span class="check__radio"></span>
+                        Адаптивная</label>
+                    <label class="grid-label">
+                        <input class="radio-input" type="radio">
+                        <span class="check__radio"></span>
+                        Фиксированная
+                    </label>
+                    <label class="grid-label">
+                        <input class="radio-input" type="radio">
+                        <span class="check__radio"></span>
+                        Резиновая</label>
+                </div>
             </fieldset>
 
             <fieldset class="checkbox  aside-item">

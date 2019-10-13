@@ -175,11 +175,14 @@ a {
 .aside-item {
     margin-top: 63px;
     width: 261px;
+    /* border: none; */
 }
 
 .aside-item legend {
     margin-bottom: 50px;
+    margin-left: -13px;
     font-size: 18px;
+    font-weight: bold;
     line-height: 30px;
     color: #000000;
     text-align: left;
@@ -187,7 +190,7 @@ a {
 }
 
 .slider-input {
-    background: #ccc;
+    background: #eeeeee;
     height: 81px;
     display: flex;
     justify-content: center;
@@ -199,6 +202,60 @@ a {
     width: 100%;
 }
 
+.slider-controls {
+    font-size: 16px;
+    color: #283136;
+    /* line-height: 22px; */
+    text-align: left;
+    text-transform: none;
+}
+
+.slider-controls input {
+    color: #283136;
+    background-color: #eeeeee;
+    margin-left: 12px;
+    width: 80px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.radio-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.radio-input:checked + .check__radio {
+    background-image: url("../img/radio-on.png");
+}
+
+.grid-list{
+    margin: 0;
+    padding: 0;
+
+}
+
+.grid-label {
+    font-size: 16px;
+    color:#283136;
+    display: block;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 15px;
+    text-transform: none;
+}
+
+.check__radio{
+    position: absolute;
+    margin-left: -30px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-image: url("../img/radio-off.png");  
+}
 
 /* 
 .filter-left .radio,
@@ -250,13 +307,6 @@ fieldset {
 }
 
 
-
-.radio-input {
-    position: absolute;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
 
 .radio-button {
     position: absolute;
