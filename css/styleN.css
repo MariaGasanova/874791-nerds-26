@@ -170,16 +170,19 @@ a {
     width: 480px;
     float: left;
     padding: 0 20px 0 139px;
+    text-transform: none;
+    font-size: 16px;
+    color: #283136;
 }
 
 .aside-item {
     margin-top: 63px;
     width: 261px;
-    /* border: none; */
+    border: none;
 }
 
 .aside-item legend {
-    margin-bottom: 50px;
+    margin-bottom: 9px;
     margin-left: -13px;
     font-size: 18px;
     font-weight: bold;
@@ -187,6 +190,10 @@ a {
     color: #000000;
     text-align: left;
     text-transform: uppercase;
+}
+
+.aside-item .price {
+    margin-bottom: 50px;
 }
 
 .slider-input {
@@ -203,15 +210,11 @@ a {
 }
 
 .slider-controls {
-    font-size: 16px;
-    color: #283136;
-    /* line-height: 22px; */
     text-align: left;
-    text-transform: none;
+    
 }
 
 .slider-controls input {
-    color: #283136;
     background-color: #eeeeee;
     margin-left: 12px;
     width: 80px;
@@ -220,6 +223,8 @@ a {
     border-radius: 4px;
     text-align: center;
 }
+
+/*ASIDE RADIO */
 
 .radio-input {
     position: absolute;
@@ -235,12 +240,9 @@ a {
 .grid-list{
     margin: 0;
     padding: 0;
-
 }
 
 .grid-label {
-    font-size: 16px;
-    color:#283136;
     display: block;
     width: 100%;
     padding-left: 25px;
