@@ -163,7 +163,7 @@ a {
 }
 
 
-/* ASIDE START*/
+/* ASIDE START__SLIDER*/
 
 .filter-left {
     background-color: #ffffff;
@@ -257,6 +257,33 @@ a {
     background-image: url("../img/radio-off.png");  
 }
 
+/*ASIDE CHECKBOX*/
+.check {
+display: block;
+padding-left: 25px;
+padding-top: 15px;
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    margin-left: -30px;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-image: url("../img/checkbox-off.png");
+}
+
+.check__input:checked + .check__box {
+    background-image: url("../img/checkbox-on.png");
+    width: 27px;
+}
 /* 
 .filter-left .radio,
 .filter-left .checkbox {
