@@ -301,66 +301,6 @@ padding-top: 15px;
     background-image: url("../img/checkbox-on.png");
     width: 27px;
 }
-/* 
-.filter-left .radio,
-.filter-left .checkbox {
-    list-style: none;
-    font-size: 16px;
-    line-height: 20px;
-    color: #283136;
-    text-transform: none;
-    display: inline-block;
-    width: 261px;
-}
-
-.filter-left .radio ul,
-.filter-left .checkbox ul {
-    list-style: none;
-}
-
-.filter-left .slider {
-    text-transform: uppercase;
-    letter-spacing: 0, 18px;
-    text-align: left;
-    padding-top: 70px;
-}
-
-.filter-left .radio {
-    padding-top: 195px;
-}
-
-.filter-left .filter-adaptive,
-.filter-left .filter-fixed,
-.filter-left .filter-non-fixed {
-    padding-top: 16px;
-    padding-left: 23px;
-}
-
-.filter-left button {
-    font: inherit;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    background-color: #eeeeee;
-    width: 260px;
-    height: 50px;
-}
-
-fieldset {
-    border: none;
-}
-
-
-
-.radio-button {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/radio-on.png");
-    border: 1px solid black;
-    border-radius: 50%;
-} */
-
 
 /* ASIDE END*/
 
@@ -379,13 +319,6 @@ fieldset {
     margin-top: 75px;
     margin-left: 60px;
 }
-
-/*
-.catalogs .catalog-2,
-.catalogs .catalog-4,
-.catalogs .catalog-6 {
-    margin-left: 36px;
-} */
 
 .catalog {
     width: 360px;
