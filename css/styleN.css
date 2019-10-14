@@ -111,7 +111,7 @@ a {
 }
 
 .index-slides {
-    
+    display:none;
 }
 
 .page-title {
@@ -297,6 +297,67 @@ padding-top: 15px;
 
 /* ASIDE END*/
 
+/*---CATALOG-----SORT---- */
+
+.sort {
+    display: inline-block;
+    width: 720px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.sort h4 {
+    padding-top: 32px;
+    padding-left: 59px;
+    font-weight: bold;
+}
+
+.sort ul {
+    list-style: none;
+    margin-left: 204px;
+}
+
+.sort li {
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 13px;
+}
+
+.sort>div {
+    display: inline-block;
+}
+
+.sort-icons {
+    width: 30px;
+    height: 10px;
+    display: inline-block;
+}
+
+.sort-icon{
+    width: 11px;
+    height: 10px;
+    background-repeat: no-repeat;
+    margin-left: 790px;
+}
+
+.sort-icon-down {
+    background-image: url("../img/icon-down-dir.png");
+    margin-left: 776px;
+    margin-top: -41px;
+}
+
+.sort-icon-up {
+    background-image: url("../img/icon-up-dir.png");
+    margin-left: 796px;
+    margin-top: -10px;
+}
+
+/* CATALOG */
+
 .catalog-container {
     display: inline-block;
     width: 960px;
@@ -309,14 +370,12 @@ padding-top: 15px;
 .catalogs>div {
     display: inline-block;
     width: 360px;
-    margin-top: 75px;
-    margin-left: 60px;
+    margin: 35px -28px 39px 60px;
 }
 
 .catalog {
     width: 360px;
     height: 576px;
-    border: 1px solid #e1e1e1;
 }
 
 .catalog-header{
@@ -372,7 +431,7 @@ padding-top: 15px;
    text-align: center;
    text-transform: none;
    color: #666666;
-   padding-bottom: 30px;
+   padding-bottom: 37px;
    margin-bottom: 20px;
 }
 
@@ -382,13 +441,12 @@ padding-top: 15px;
     width: 200px;
     height: 50px;
     background: #fb565a;
-
+    padding-top: 15px;
+    margin: -43px 80px 43px 80px;
 }
 
 .catalog-button a{
     display: block;
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -409,38 +467,7 @@ padding-top: 15px;
     margin-top: -8px;
 } */
 
-/*---CATALOG-----SORT---- */
 
-.sort {
-    display: inline-block;
-    width: 720px;
-    text-align: left;
-    font-size: 18px;
-    line-height: 18px;
-    vertical-align: middle;
-}
-
-.sort h4 {
-    padding-top: 32px;
-    padding-left: 59px;
-    font-weight: bold;
-}
-
-.sort ul {
-    list-style: none;
-    margin-left: 204px;
-}
-
-.sort li {
-    display: inline-block;
-    text-align: left;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.sort>div {
-    display: inline-block;
-}
 
 /*.sort-icons {
     display: inline-block;
@@ -450,6 +477,8 @@ padding-top: 15px;
 .page {
     list-style: none;
     display: inline-block;
+    margin-top: 62px;
+    margin-left:25px;
 }
 
 .page>li {
@@ -507,7 +536,7 @@ padding-top: 15px;
 .social-button img {
     display: block;
     padding-top: 28px;
-    margin: 0 auto;
+    padding-left: 31px;
 }
 
 .footer-friends b,
@@ -520,6 +549,7 @@ padding-top: 15px;
     font-weight: bold;
     line-height: 36px;
     color: #000000;
+    margin-left: 55px;
 }
 
 .footer-friends p {
@@ -527,6 +557,7 @@ padding-top: 15px;
     font-weight: normal;
     line-height: 22px;
     color: #444444;
+    margin-left: 55px;
 }
 
 .footer-friends b {
@@ -559,10 +590,4 @@ padding-top: 15px;
     background-image: url("../img/insta-icon.png");
     background-position: 31 px 23px;
     background-size: 30px;
-}
-
-.social-button img {
-    display: block;
-    margin: 30px auto;
-    padding: 30px;
 }
