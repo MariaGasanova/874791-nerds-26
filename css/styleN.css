@@ -19,12 +19,6 @@ body {
     box-sizing: border-box;
 }
 
-
-/*
-* * {
-    background-color: rgba(0, 255, 0, 0.1);
-} */
-
 h1 {
     font-size: 55px;
     line-height: 55px;
@@ -36,7 +30,7 @@ h1 {
 .inner-page {
     color: #000000;
     background-color: #ffffff;
-    background-image: url("img/white-back.jpg");
+    background-image: url("../img/white-back.jpg");
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -396,21 +390,45 @@ fieldset {
 .catalog {
     width: 360px;
     height: 576px;
-    background: #ffffff;
     border: 1px solid #e1e1e1;
-    background-image: url("../img/browser.png");
-    background-repeat: no-repeat;
+}
+
+.catalog-header{
+    height: 40px;
+    background: url("../img/browser.png");
 }
 
 .catalog-body {
-    /* background: #FB565A; */
-    padding-top: 345px;
+    padding-top: 320px;
     height: 576px;
+}
+
+.catalog-1 {
     background-image: url("../img/img-sedona-jpg.jpg");
 }
 
+.catalog-2 {
+    background-image: url("../img/img-pink-jpg.jpg");
+}
+
+.catalog-3 {
+    background-image: url("../img/img-barbershop-jpg.jpg");
+}
+
+.catalog-4 {
+    background-image: url("../img/img-mishka-jpg.jpg");
+}
+
+.catalog-5 {
+    background-image: url("../img/img-aplus-jpg.jpg");
+}
+
+.catalog-6 {
+    background-image: url("../img/img-kvast-jpg.jpg");
+}
+
 .catalog-offer {
-    background: #eeee;
+    background: red;
     height: 231px;
 }
 
@@ -430,6 +448,24 @@ fieldset {
    padding-bottom: 30px;
    margin-bottom: 20px;
 }
+
+
+.catalog-button{
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background: green;
+
+}
+
+.catalog-button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /*
 .catalog-offer a {
     background-color: #fb565a;
