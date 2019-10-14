@@ -116,7 +116,7 @@ a {
    margin: 0;
    padding-top: 65px;
    padding-bottom: 110px;
-   height: 413px;
+   height: 420px;
 }
 
 .index-slides {
@@ -138,22 +138,16 @@ a {
     display: none;
 }
 
-.advantages-web,
-.advantages-apps,
-.advantages-presentation {
+.advantages {
     display: inline-block;
     margin: 45px;
 }
 
-.advantages-web ul,
-.advantages-apps ul,
-.advantages-presentation ul {
+.advantages ul {
     list-style: none;
 }
 
-.advantages-web button,
-.advantages-apps button,
-.advantages-presentation button {
+.advantages button {
     display: inline-block;
     margin: 40px;
     width: 160px;
