@@ -110,22 +110,20 @@ a {
     margin-right: 25px;
 }
 
-/*.index-slides {
-   display:none;
-   background-color: #eeeeee;
-   margin: 0;
-   padding-top: 65px;
-   padding-bottom: 110px;
-} */
-
+/* ВРЕМЕННОЕ РЕШЕНИЕ ВМЕСТО СЛАЙДОВ*/
 .header-item {
    background-color: #eeeeee;
    margin: 0;
    padding-top: 65px;
    padding-bottom: 110px;
-   height: 50px;
+   height: 413px;
 }
 
+.index-slides {
+    display: none;
+}
+
+/*--КОД ДЛЯ ВТОРОЙ СТРАНИЦЫ---*/
 .page-title {
     background-color: #eeeeee;
     margin: 0;
