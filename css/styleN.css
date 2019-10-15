@@ -138,7 +138,9 @@ a {
     display: none;
 }
 
-.advantage-items{
+.advantage-items {
+    font-size: 24px;
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -146,17 +148,27 @@ a {
     padding-top: 65px;
     margin-left: 67px;
     margin-right: 157px;
-    
+
 }
 
 .advantages ul {
     list-style: none;
 }
 
+.advantages p {
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: none;
+}
+
 .advantages button {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
     margin: 40px;
     width: 160px;
     height: 50px;
+    background-color: #fb565a;
 }
 
 .studio {
