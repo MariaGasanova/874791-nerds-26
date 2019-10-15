@@ -139,7 +139,7 @@ a {
 }
 
 .advantage-items {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
@@ -165,27 +165,50 @@ a {
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
+    line-height: 24px;
     margin: 40px;
+    margin-top: 5px;
     width: 160px;
     height: 50px;
     background-color: #fb565a;
+    border-radius: 5px;
 }
 
 .studio {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: skyblue;
+    height: 413px;
 }
 
-.nerds-illustration {
-    display: none;
+.studio-about {
+    /*background-image: url("../img/white-back.jpg");*/
 }
 
-.nerds-advantages {
-    display: none;
+.studio-about ul {
+    list-style-type: symbols(-);;
 }
 
-.site-logo {
-    display: none;
+.column-picture {
+    display: flex;
+    flex-direction: column;
+    
 }
+
+.column-advantages {
+    display: flex;
+    flex-direction: row;
+    
+}
+/* ССЫЛКИ НА САЙТЫ */
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px;
+}
+
 
 .contacts {
     display: none;
