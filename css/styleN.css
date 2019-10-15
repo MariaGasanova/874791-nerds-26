@@ -138,9 +138,15 @@ a {
     display: none;
 }
 
-.advantages {
-    display: inline-block;
-    margin: 45px;
+.advantage-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 65px;
+    margin-left: 67px;
+    margin-right: 157px;
+    
 }
 
 .advantages ul {
@@ -148,7 +154,6 @@ a {
 }
 
 .advantages button {
-    display: inline-block;
     margin: 40px;
     width: 160px;
     height: 50px;
