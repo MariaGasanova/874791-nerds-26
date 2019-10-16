@@ -225,12 +225,23 @@ main {
 .studio-content {
     width: 799px;
     background-color: violet;
+    color: #000000;
 }
 
 .studio-item1 {
-    height: 284px;
+    height: 245px;
     background-color: green;
+    font-size: 45px;
+    font-weight: 500; 
+    line-height: 45px; 
 }
+
+.studio-description {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px; 
+}
+
 
 .studio-item2 {
     height: 245px;
