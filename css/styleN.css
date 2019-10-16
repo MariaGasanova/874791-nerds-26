@@ -98,6 +98,18 @@ header {
     list-style: none;
 }
 
+.site-nav-item a:focus {
+    color: #000000;
+}
+
+.site-nav-item a:hover {
+    color: #fb565a;
+}
+
+.site-nav-item a:active {
+    color: rgba (0 0 0, 0.3);
+}
+
 .cart {
     vertical-align: middle;
     display: inline-block;
@@ -191,7 +203,7 @@ main {
     border-radius: 5px;
 }
 
-.advantage-item-1 button {
+.advantage-item-1 button a:focus {
     background-color: #fb565a;
 }
 
@@ -362,7 +374,16 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 150px;
+    background-color: moccasin;
+    padding: 52px 0 0 71px;
+}
+
+/*
+.small-divider {
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee; */
+
 }
 
 .contacts {
