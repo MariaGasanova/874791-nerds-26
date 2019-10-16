@@ -212,30 +212,56 @@ main {
 /*-----STUDIO----------*/
 .studio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     background-color: skyblue;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 529px;
+    text-transform: none;
+    text-align: left;
 }
 
 .studio-content {
-    width: 799px;
-    height: 414px;
-    background-color: chocolate;
+    height: 242px;
+    background-color: pink;
 }
 
-.studio-slogan {
+.studio-content p {
+    color:#000000;
     font-size: 45px;
     font-weight: 500;
     line-height: 1;
-    text-align: left;
-    color: #000000;
-    /*width: 650px; */
-    height: 87px;
-    background-color: cyan;
+    letter-spacing: normal;
 }
 
-.studio-description {
-    background-color: wheat; 
+p.studio-description {
+    width: 616px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    text-transform: none;
+    color: #283136;
+}
+
+.studio-title {
+    background-color: green; 
+    height: 287px;
+    width: 799px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: yellow;
+    margin: 0px;
+    padding: 0px;
+    width: 400px;
+    height: 529px;
+    text-transform: none; 
 }
 
 /*
