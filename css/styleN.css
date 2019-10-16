@@ -46,7 +46,6 @@ a {
     color: #ffffff;
     vertical-align: middle;
     text-transform: uppercase;
-    background-color: #FB565A;
     border: none;
 }
 
@@ -63,7 +62,7 @@ a {
 
 /*----- HEADER ------*/
 
-.main-header {
+header {
     width: 100%;
     padding: 49px 140px 0 140px;
     vertical-align: middle;
@@ -110,13 +109,16 @@ a {
     margin-right: 25px;
 }
 
-/* ВРЕМЕННОЕ РЕШЕНИЕ ВМЕСТО СЛАЙДОВ*/
+
 .header-item {
-   background-color: #eeeeee;
+   background-color: green;
    margin: 0;
    padding-top: 65px;
    padding-bottom: 110px;
    height: 420px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .index-slides {
@@ -134,46 +136,93 @@ a {
 
 /*--- HEADER END ----*/
 
+
+/*--- MAIN ----*/
+
+main {
+    width: 100%;
+    padding: 80px 140px 0 140px;
+    background-color: red;
+}
+
+/*--- MAIN END----*/
+ 
 .paging {
     display: none;
 }
 
-.advantage-items {
+/*--- ADVANTAGES ---*/
+
+.advantages{
+    background: greenyellow;
     font-size: 22px;
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 65px;
-    margin-left: 67px;
-    margin-right: 157px;
-
+    height: 100px;
 }
 
-.advantages ul {
+.advantage-item{
+    background: #e1e1e1;
+    width: 300px;
+    height: 100px;
+}
+
+.advantage-content {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
-.advantages p {
+.advantage-title h3{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.advantage-text p {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.make-order {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.advantage-item-1 button{
+    background-color: #fb565a;
+}
+
+.advantage-item-2 button {
+    background-color: #00ca74;
+}
+
+.advantage-item-3 button {
+    background-color: #efc84a;
+}
+/* 
+.advantage-item ul {
+    list-style: none;
+}
+
+.advantage-item p {
   font-size: 16px;
   font-weight: normal;
   text-transform: none;
 }
 
-.advantages button {
-    font-size: 16px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 24px;
-    margin: 40px;
-    margin-top: 5px;
-    width: 160px;
-    height: 50px;
-    background-color: #fb565a;
-    border-radius: 5px;
-}
-
+.advantage-item button {
+  
+} */
+/*--- ADVANTAGES END ---*/
 .studio {
     display: flex;
     flex-direction: row;
@@ -182,12 +231,11 @@ a {
     height: 413px;
 }
 
-.studio-about {
-    /*background-image: url("../img/white-back.jpg");*/
-}
-
-.studio-about ul {
-    list-style-type: symbols(-);;
+.studio-slogan {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
 }
 
 .column-picture {
@@ -201,7 +249,7 @@ a {
     flex-direction: row;
     
 }
-/* ССЫЛКИ НА САЙТЫ */
+/*------------------------- ССЫЛКИ НА САЙТЫ */
 .link {
     display: flex;
     flex-direction: row;
@@ -215,7 +263,7 @@ a {
 }
 
 
-/* ASIDE START__SLIDER*/
+/* ASIDE START__SLIDER-------------------------*/
 
 .filter-left {
     background-color: #ffffff;
