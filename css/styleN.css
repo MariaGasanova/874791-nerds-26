@@ -110,7 +110,7 @@ header {
 }
 
 
-.header-item {
+.header-content {
    background-color: green;
    margin: 0;
    padding-top: 65px;
@@ -121,9 +121,6 @@ header {
    justify-content: center;
 }
 
-.index-slides {
-    display: none;
-}
 
 /*--КОД ДЛЯ ВТОРОЙ СТРАНИЦЫ---*/
 .page-title {
@@ -162,6 +159,7 @@ main {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    margin-bottom: 283px;
 }
 
 .advantage-item{
@@ -208,35 +206,45 @@ main {
 .advantage-item-3 button {
     background-color: #efc84a;
 }
-/* 
-.advantage-item ul {
-    list-style: none;
-}
 
-.advantage-item p {
-  font-size: 16px;
-  font-weight: normal;
-  text-transform: none;
-}
-
-.advantage-item button {
-  
-} */
 /*--- ADVANTAGES END ---*/
+
+/*-----STUDIO----------*/
 .studio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: skyblue;
-    height: 413px;
 }
 
+.studio-content {
+    width: 799px;
+    height: 414px;
+    background-color: chocolate;
+}
+
+.studio-slogan {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    color: #000000;
+    /*width: 650px; */
+    height: 87px;
+    background-color: cyan;
+}
+
+.studio-description {
+    background-color: wheat; 
+}
+
+/*
 .studio-slogan {
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
     line-height: 24px;
-}
+} */
 
 .column-picture {
     display: flex;
@@ -249,6 +257,9 @@ main {
     flex-direction: row;
     
 }
+/*-------STUDIO---END----*/
+
+
 /*------------------------- ССЫЛКИ НА САЙТЫ */
 .link {
     display: flex;
