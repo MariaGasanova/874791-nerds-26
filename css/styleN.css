@@ -88,8 +88,7 @@ header {
     display: block;
     width: 160px;
     height: 65px;
-    background-image: url("../img/nerds-logo-first.png);
-
+    background-image: url("../img/nerds-logo-first.png");
     /* background-color: #00ca74; */
 }
 
@@ -98,7 +97,7 @@ header {
 }
 
 .main-header-logo a:focus {
-    background-image: url("../img/nerds-logoFocus.png");
+    background-image: url("../img/nerds-logo-focus.png");
 }
 
 .site-navigation {
