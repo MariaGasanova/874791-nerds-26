@@ -85,6 +85,14 @@ header {
     background-color: #eeeeee;
 }
 
+.main-header-logo a:hover {
+    background-image: url("../img/nerds-logo.png");
+}
+
+.main-header-logo a:focus {
+    background-image: url("../img/nerds-logoFocus.png");
+}
+
 .site-navigation {
     color: #000000;
     margin-left: 161px;
@@ -98,16 +106,12 @@ header {
     list-style: none;
 }
 
-.site-nav-item a:focus {
-    color: #000000;
-}
-
 .site-nav-item a:hover {
     color: #fb565a;
 }
 
-.site-nav-item a:active {
-    color: rgba (0 0 0, 0.3);
+.site-nav-item a:focus {
+    color: rgba(0, 0, 0, .3);
 }
 
 .cart {
@@ -123,6 +127,10 @@ header {
 
 .cart a:hover {
     color: #fb565a;
+}
+
+.cart a:focus {
+    color: rgba(0, 0, 0, .3);
 }
 
 /*------SLIDES-------------*/
@@ -141,16 +149,16 @@ header {
     width: 100%;
 }
 
-.slide-content1 {
+.slide-content1, .slide-content2 {
     font-size: 16px;
     text-transform: none;
 }
 
-.slide-content1 p {
+.slide-content1 p, .slide-content2 p {
     color: #283136;
 }
 
-.slide-content1 a {
+.slide-content1 a, .slide-content2 a {
     display: inline-block;
     width: 240px;
     height: 50px;
@@ -163,11 +171,11 @@ header {
     padding-top: 10px;
 }
 
-.slide-content1 a:hover {
+.slide-content1 a:hover, .slide-content2 a:hover, {
     background-color: #e74246;
 }
 
-.slide-content1 a:active {
+.slide-content1 a:focus, .slide-content2 a:focus {
     color: rgba(255, 255, 255, .3);
     background-color: #d7373b;
 }
@@ -180,7 +188,7 @@ header {
 }
 
 .slides-picture {
-    background-color: salmon;
+    background-color: #eeeeee;
 }
 
 /**SLIDE 1---------------*/
@@ -190,6 +198,13 @@ header {
     height: 413px;
     background-color: #eeeeee;
     background-image: url("../img/slide-picturePhone.png");
+}
+
+.slides-picture2 {
+    width: 663px;
+    height: 430px;
+    background-color: #eeeeee;
+    background-image: url("../img/slide-pictureComp.png")
 }
 
 /*--КОД ДЛЯ ВТОРОЙ СТРАНИЦЫ---*/
