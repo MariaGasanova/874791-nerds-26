@@ -217,7 +217,7 @@ header {
     width: 759px;
     height: 411px;
     background-color: #eeeeee;
-    background-image: url("../img/slide-picturePhone.png");
+    background-image: url("../img/slide-picture.png");
 }
 
 /*--КОД ДЛЯ ВТОРОЙ СТРАНИЦЫ---*/
@@ -483,13 +483,16 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 40px 0 10px 71px;
+    align-items: center;
+    margin: 40px 0 25px 75px;
+    /* margin-left: 75px; */
 }
 
-.link-list1 a, .link-list2 a, .link-list3 a {
+.link-list1 a, .link-list2 a, .link-list3 a, .link-list4 a {
     display: block;
-    width: 200px;
-    height: 68px;
+    width: 209px;
+    height: 90px;
+    background-repeat: no-repeat;
 }
 
 .link-list1 a {
@@ -505,22 +508,46 @@ header {
 }
 
 .link-list2 a {
-    background-image: url("../img/borodinskiL");
+    background-image: url("../img/borodinsli-logo-first.png");
 }
 
 .link-list2 a:hover {
-    background-image: url("../img/htmlacdemy-logo-hover.png");
+    background-image: url("../img/borodinsli-logo-hover.png");
 }
 
 .link-list2 a:focus {
-    background-image: url("../img/htmlacdemy-logo-focus.png");
+    background-image: url("../img/borodinsli-logo-focus.png");
 }
 
-/* .small-divider {
+.link-list3 a {
+    background-image: url("../img/pink-logo-first.png");
+}
+
+.link-list3 a:hover {
+    background-image: url("../img/pink-logo-hover.png");
+}
+
+.link-list3 a:focus {
+    background-image: url("../img/pink-logo-focus.png");
+}
+
+.link-list4 a {
+    background-image: url("../img/mishka-logo-first.png");
+}
+
+.link-list4 a:hover {
+    background-image: url("../img/mishka-logo-hover.png");
+}
+
+.link-list4 a:focus {
+    background-image: url("../img/mishka-logo-focus.png");
+}
+
+.small-divider {
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
-} */
+}
 
 /* --------CONTACTS --------*/
 
@@ -564,7 +591,8 @@ header {
     padding-left: 54px;
 }
 
-.contacts-modal button {
+.contacts-modal a {
+    display: block;
     width: 219px;
     height: 50px;
     margin-left: 54px;
