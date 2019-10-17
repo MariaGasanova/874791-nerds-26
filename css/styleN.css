@@ -82,11 +82,19 @@ header {
 .main-header-logo {
     vertical-align: middle;
     display: inline-block;
-    background-color: #eeeeee;
+}
+
+.main-header-logo a {
+    display: block;
+    width: 160px;
+    height: 65px;
+    background-image: url("../img/nerds-logo-first.png);
+
+    /* background-color: #00ca74; */
 }
 
 .main-header-logo a:hover {
-    background-image: url("../img/nerds-logo.png");
+    background-image: url("../img/nerds-logo-hover.png");
 }
 
 .main-header-logo a:focus {
@@ -136,7 +144,6 @@ header {
 /*------SLIDES-------------*/
 
 .header-content {
-    background-color: green;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -145,7 +152,6 @@ header {
 }
 
 .header-slides {
-    background-color: yellowgreen;
     width: 100%;
 }
 
@@ -171,7 +177,7 @@ header {
     padding-top: 10px;
 }
 
-.slide-content1 a:hover, .slide-content2 a:hover, {
+.slide-content1 a:hover, .slide-content2 a:hover {
     background-color: #e74246;
 }
 
