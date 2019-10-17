@@ -121,6 +121,10 @@ header {
     margin-right: 25px;
 }
 
+.cart a:hover {
+    color: #fb565a;
+}
+
 /*------SLIDES-------------*/
 
 .header-content {
@@ -147,17 +151,25 @@ header {
 }
 
 .slide-content1 a {
-    display: flex;
+    display: inline-block;
     width: 240px;
     height: 50px;
     font-weight: 500;
     color: #ffffff;
-    border: 1px solid #fb565a;
     background-color: #fb565a;
     border-radius: 5px;
     text-transform: uppercase;
-    padding-left: 50px;
+    text-align: center;
     padding-top: 10px;
+}
+
+.slide-content1 a:hover {
+    background-color: #e74246;
+}
+
+.slide-content1 a:active {
+    color: rgba(255, 255, 255, .3);
+    background-color: #d7373b;
 }
 
 .slide-text {
