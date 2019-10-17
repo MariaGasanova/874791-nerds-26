@@ -154,16 +154,17 @@ header {
     width: 100%;
 }
 
-.slide-content1, .slide-content2 {
+.slide-content1, .slide-content2, .slide-content3 {
     font-size: 16px;
     text-transform: none;
+    /* color: #000000; */
 }
 
-.slide-content1 p, .slide-content2 p {
+.slide-content1 p, .slide-content2 p, .slide-content3 p {
     color: #283136;
 }
 
-.slide-content1 a, .slide-content2 a {
+.slide-content1 a, .slide-content2 a, .slide-content3 a {
     display: inline-block;
     width: 240px;
     height: 50px;
@@ -176,11 +177,11 @@ header {
     padding-top: 10px;
 }
 
-.slide-content1 a:hover, .slide-content2 a:hover {
+.slide-content1 a:hover, .slide-content2 a:hover, .slide-content3 a:hover {
     background-color: #e74246;
 }
 
-.slide-content1 a:focus, .slide-content2 a:focus {
+.slide-content1 a:focus, .slide-content2 a:focus, .slide-content3 a:focus {
     color: rgba(255, 255, 255, .3);
     background-color: #d7373b;
 }
@@ -210,6 +211,13 @@ header {
     height: 430px;
     background-color: #eeeeee;
     background-image: url("../img/slide-pictureComp.png")
+}
+
+.slides-picture3 {
+    width: 759px;
+    height: 411px;
+    background-color: #eeeeee;
+    background-image: url("../img/slide-picturePhone.png");
 }
 
 /*--КОД ДЛЯ ВТОРОЙ СТРАНИЦЫ---*/
@@ -273,26 +281,58 @@ header {
     text-transform: none;
 }
 
-.make-order {
+.advantage-item a {
+    display: inline-block;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
     line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
     width: 160px;
     height: 50px;
     border-radius: 5px;
+    padding-top: 10px;
 }
 
-.advantage-item-1 button {
+.advantage-item-1 a {
     background-color: #fb565a;
 }
 
-.advantage-item-2 button {
+.advantage-item-1 a:hover {
+    background-color: #e74246;
+}
+
+.advantage-item-1 a:focus {
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, .3);
+}
+
+.advantage-item-2 a {
     background-color: #00ca74;
 }
 
-.advantage-item-3 button {
+.advantage-item-2 a:hover {
+    background-color: #00bc6c;
+}
+
+.advantage-item-2 a:focus {
+    background-color: #00aa62;
+    color: rgba(255, 255, 255, .3);
+}
+
+.advantage-item-3 a {
     background-color: #efc84a;
+}
+
+.advantage-item-3 a:hover {
+    background-color: #eab534;
+}
+
+.advantage-item-3 a:focus {
+    background-color: #e5a722;
+    color: rgba(255, 255, 255, .3);
 }
 
 /*--- ADVANTAGES END ---*/
@@ -446,11 +486,41 @@ header {
     margin: 40px 0 10px 71px;
 }
 
-.small-divider {
+.link-list1 a, .link-list2 a, .link-list3 a {
+    display: block;
+    width: 200px;
+    height: 68px;
+}
+
+.link-list1 a {
+    background-image: url("../img/htmlacdemy-logo-first.png");
+}
+
+.link-list1 a:hover {
+    background-image: url("../img/htmlacdemy-logo-hover.png");
+}
+
+.link-list1 a:focus {
+    background-image: url("../img/htmlacdemy-logo-focus.png");
+}
+
+.link-list2 a {
+    background-image: url("../img/borodinskiL");
+}
+
+.link-list2 a:hover {
+    background-image: url("../img/htmlacdemy-logo-hover.png");
+}
+
+.link-list2 a:focus {
+    background-image: url("../img/htmlacdemy-logo-focus.png");
+}
+
+/* .small-divider {
     width: 2px;
     height: 52px;
     background-color: #eeeeee;
-}
+} */
 
 /* --------CONTACTS --------*/
 
