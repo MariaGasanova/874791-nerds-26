@@ -121,6 +121,11 @@ header {
     color: rgba(0, 0, 0, .3);
 }
 
+.site-nav-item a:active {
+    color: #000000;
+    border-bottom: 2px solid #fb565a;
+}
+
 .cart {
     vertical-align: middle;
     display: inline-block;
@@ -138,6 +143,11 @@ header {
 
 .cart a:focus {
     color: rgba(0, 0, 0, .3);
+}
+
+.cart a:active {
+    color: #000000;
+    border-bottom: 2px solid #fb565a;
 }
 
 /*------SLIDES-------------*/
@@ -563,6 +573,8 @@ header {
 }
 
 .contacts-map img {
+    width: 1440px;
+    height: 416px;
     background-image: url("../img/2.jpg");
 }
 
@@ -604,12 +616,12 @@ header {
     border-radius: 5px;
 }
 
-.contacts-marker {
+/* .contacts-marker {
     margin-left: 600px;
     width: 231px;
     height: 190px;
     margin: 89px 389px 137px 361px;
-}
+} */
 
 /* ASIDE START__SLIDER-------------------------*/
 
@@ -759,15 +771,21 @@ header {
     margin-left: 204px;
 }
 
-.sort li {
+/* .sort li {
     display: inline-block;
     text-align: left;
     font-size: 14px;
     line-height: 18px;
-    padding-left: 13px;
+    padding-left: 13px; */
+
 }
 
-.sort a {
+.price li {
+    color: rgba(0, 0, 0, .3);
+    border: none;
+}
+
+/* .sort a {
     color: rgba(0, 0, 0, .3);
 }
 
@@ -777,7 +795,7 @@ header {
 
 .sort a:focus, .sort a:active {
     color: #000000;
-}
+} */
 
 .sort>div {
     display: inline-block;
@@ -794,10 +812,6 @@ header {
     height: 10px;
     background-repeat: no-repeat;
     margin-left: 790px;
-}
-
-.sort-icon-down a {
-    background-image: url("../img/icon-down-dir.png");
 }
 
 .sort-icon-down {
