@@ -701,6 +701,10 @@ header {
     padding: 0;
 }
 
+.grid-list input:hover {
+    background-image: url("../img/radio-on-hover.png");
+}
+
 .grid-label {
     display: block;
     width: 100%;
@@ -753,7 +757,6 @@ header {
 
 .sort {
     display: inline-block;
-    width: 720px;
     text-align: left;
     font-size: 18px;
     line-height: 18px;
@@ -797,7 +800,7 @@ header {
 }
 
 .sort-icons p {
-    /* display: inline-block; */
+    display: block;
     width: 11px;
     height: 10px;
 }
@@ -806,12 +809,12 @@ header {
     background-image: url("../img/icon-down-dir.png");
     background-repeat: no-repeat;
     /* margin-left: 776px; */
-    margin-top: -41px;
+    margin-top: 0;
 }
 
 .sort-icon-up {
     background-image: url("../img/icon-up-dir.png");
-    margin-top: -10px;
+    margin-top: -23px;
 }
 
 /* CATALOG */
@@ -838,7 +841,7 @@ header {
 
 .catalog-header {
     height: 40px;
-    background: url("../img/browser-hover.png");
+    background: url("../img/browser.png");
 }
 
 .catalog-body {
@@ -915,6 +918,15 @@ header {
 
 .page>li {
     display: inline-block;
+    border: 2px solid #e1e1e1;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.page .next {
+    width: 260px;
+    height: 50px;
 }
 
 /* -----------FOOTER-------------*/
@@ -971,9 +983,9 @@ header {
 /* .social-button img {
     display: block;
     padding-top: 28px;
-    padding-left: 31px; */
+    padding-left: 31px; 
 
-}
+} */
 
 .footer-friends b, .footer-friends p {
     text-transform: none;
