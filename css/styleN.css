@@ -116,6 +116,10 @@ header {
     list-style: none;
 }
 
+.site-nav-item .current {
+    border-bottom: #fb565a;
+}
+
 .site-nav-item a:hover {
     color: #fb565a;
 }
@@ -571,12 +575,12 @@ header {
     height: 416px;
     background-color: #b5b5b5;
     margin-top: 60px;
+    margin-bottom: 69px;
 }
 
 .contacts-map img {
     width: 1440px;
     height: 416px;
-    background-image: url("../img/2.jpg");
 }
 
 .contacts-modal {
@@ -604,13 +608,14 @@ header {
     padding-left: 54px;
 }
 
-.contacts-modal a {
+.contacts-modal button {
     display: block;
     width: 219px;
     height: 50px;
     margin-left: 54px;
     font-size: 16px;
     font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
     color: #ffffff;
     background-color: #fb565a;
@@ -976,23 +981,72 @@ header {
 }
 
 .page {
-    list-style: none;
     display: inline-block;
     margin-top: 62px;
     margin-left: 25px;
 }
 
-.page>li {
+.page a {
+    color: #000000;
+}
+
+.page ul {
+    list-style: none;
+}
+
+.page li {
     display: inline-block;
-    border: 2px solid #e1e1e1;
+    padding-top: 10px;
+    padding-left: 16px;
+}
+
+.page .first {
     width: 50px;
     height: 50px;
-    text-align: center;
+    border: 3px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+.page .second {
+    width: 50px;
+    height: 50px;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    border-radius: 4px;
+}
+
+.page .third {
+    width: 50px;
+    height: 50px;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    border-radius: 4px;
 }
 
 .page .next {
     width: 260px;
     height: 50px;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    border-radius: 4px;
+    padding-left: 78px;
+}
+
+/* .page-button>li {
+    display: inline-block;
+    border: 2px solid #e1e1e1;
+    background-color: #e1e1e1;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 8px;
+   
+}
+
+.page-button .next {
+    width: 260px;
+    height: 50px; */
+
 }
 
 /* -----------FOOTER-------------*/
