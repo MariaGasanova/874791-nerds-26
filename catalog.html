@@ -42,8 +42,91 @@
     </header>
 
     <main class="container">
+        <aside class="filter-fields">
 
-        <aside class="filter-left">
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-item">
+                    <legend>Стоимость:</legend>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+
+                        <div class="price-controls">
+                            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="radio-item">
+                    <legend>Сетка:</legend>
+                    <div class="grid-list">
+                        <div class="grid-label">
+                            <label><input class="radio-input" type="radio" checked></label>
+                            <label><span class="check__radio"></span></label>
+                            Адаптивная
+                        </div>
+                        <div class="grid-label">
+                            <label><input class="radio-input" type="radio"></label>
+                            <label><span class="check__radio"></span></label>
+                            Фиксированная
+                        </div>
+                        <div class="grid-label">
+                            <label><input class="radio-input" type="radio"></label>
+                            <label><span class="check__radio"></span></label>
+                            Резиновая
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="checkbox">
+                    <legend>Особенности:</legend>
+                    <div class="checkbox-list">
+                        <label class="check option">
+                            <input class="check__input" type="checkbox" checked>
+                            <span class="check__box"></span>
+                            Слайдер
+                        </label>
+
+                        <label class="check option">
+                            <input class="check__input" type="checkbox">
+                            <span class="check__box"></span>
+                            Блок преимуществ
+                        </label>
+
+                        <label class="check option">
+                            <input class="check__input" type="checkbox" checked>
+                            <span class="check__box"></span>
+                            Новости
+                        </label>
+
+                        <label class="check option">
+                            <input class="check__input" type="checkbox">
+                            <span class="check__box"></span>
+                            Галерея
+                        </label>
+
+                        <label class="check option">
+                            <input class="check__input" type="checkbox">
+                            <span class="check__box"></span>
+                            Корзина
+                        </label>
+                    </div>
+                </fieldset>
+                <button class="button button-grey" type="submit">Показать</button>
+            </form>
+
+        </aside>
+
+
+
+
+        <!-- <aside class="filter-left">
             <fieldset class="slider aside-item">
                 <legend class="price">Стоимость:</legend>
                 <div class="slider-input">
@@ -60,66 +143,66 @@
                     </label>
 
                 </div>
-            </fieldset>
+            </fieldset> -->
 
-            <fieldset class="radio aside-item">
+        <!-- <fieldset class="radio aside-item">
 
-                <legend>Сетка:</legend>
-                <div class="grid-list">
-                    <label class="grid-label">
-                        <input class="radio-input" type="radio" checked>
-                        <span class="check__radio"></span>
-                        Адаптивная
-                    </label>
-                    <label class="grid-label">
-                        <input class="radio-input" type="radio">
-                        <span class="check__radio"></span>
-                        Фиксированная
-                    </label>
-                    <label class="grid-label">
-                        <input class="radio-input" type="radio">
-                        <span class="check__radio"></span>
-                        Резиновая
-                    </label>
-                </div>
-            </fieldset>
+            <legend>Сетка:</legend>
+            <div class="grid-list">
+                <label class="grid-label">
+                    <input class="radio-input" type="radio" checked>
+                    <span class="check__radio"></span>
+                    Адаптивная
+                </label>
+                <label class="grid-label">
+                    <input class="radio-input" type="radio">
+                    <span class="check__radio"></span>
+                    Фиксированная
+                </label>
+                <label class="grid-label">
+                    <input class="radio-input" type="radio">
+                    <span class="check__radio"></span>
+                    Резиновая
+                </label>
+            </div>
+        </fieldset> -->
 
-            <fieldset class="checkbox  aside-item">
+        <!-- <fieldset class="checkbox  aside-item">
 
-                <legend>Особенности:</legend>
-                <div class="checkbox-list">
-                    <label class="check option">
-                        <input class="check__input" type="checkbox" checked>
-                        <span class="check__box"></span>
-                        Слайдер
-                    </label>
+            <legend>Особенности:</legend>
+            <div class="checkbox-list">
+                <label class="check option">
+                    <input class="check__input" type="checkbox" checked>
+                    <span class="check__box"></span>
+                    Слайдер
+                </label>
 
-                    <label class="check option">
-                        <input class="check__input" type="checkbox">
-                        <span class="check__box"></span>
-                        Блок преимуществ
-                    </label>
+                <label class="check option">
+                    <input class="check__input" type="checkbox">
+                    <span class="check__box"></span>
+                    Блок преимуществ
+                </label>
 
-                    <label class="check option">
-                        <input class="check__input" type="checkbox" checked>
-                        <span class="check__box"></span>
-                        Новости
-                    </label>
+                <label class="check option">
+                    <input class="check__input" type="checkbox" checked>
+                    <span class="check__box"></span>
+                    Новости
+                </label>
 
-                    <label class="check option">
-                        <input class="check__input" type="checkbox">
-                        <span class="check__box"></span>
-                        Галерея
-                    </label>
+                <label class="check option">
+                    <input class="check__input" type="checkbox">
+                    <span class="check__box"></span>
+                    Галерея
+                </label>
 
-                    <label class="check option">
-                        <input class="check__input" type="checkbox">
-                        <span class="check__box"></span>
-                        Корзина
-                    </label>
-                </div>
-            </fieldset>
-            <button class="button button-grey" type="submit">Показать</button>
+                <label class="check option">
+                    <input class="check__input" type="checkbox">
+                    <span class="check__box"></span>
+                    Корзина
+                </label>
+            </div>
+        </fieldset> -->
+
         </aside>
 
         <div class="catalog-container">
