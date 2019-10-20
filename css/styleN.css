@@ -50,6 +50,7 @@ a {
 }
 
 .button-grey {
+    display: block;
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -58,6 +59,7 @@ a {
     height: 50px;
     background-color: #eeeeee;
     margin-top: 25px;
+    margin-left: 135px;
 }
 
 /*----- HEADER ------*/
@@ -615,27 +617,24 @@ header {
     border-radius: 5px;
 }
 
-/* .contacts-marker {
-    margin-left: 600px;
-    width: 231px;
-    height: 190px;
-    margin: 89px 389px 137px 361px;
-} */
-
 /* ASIDE START__SLIDER-------------------------*/
+
+.filter-fields {
+    width: 540px;
+    float: left;
+}
 
 .filter-item {
     margin: 0;
     padding: 0;
     border: none;
-    /* Для демонстрации */
-    width: 260px;
-    margin: 50px auto;
+    display: inline-block;
+    padding: 0 20px 0 139px;
 }
 
 .range-filter {
-    width: 260px;
-    margin-top: 49px;
+    width: 261px;
+    margin-top: 56px;
 }
 
 .filter-item legend {
@@ -643,11 +642,12 @@ header {
     line-height: 24px;
     text-transform: uppercase;
     font-weight: 700;
+    padding-top: 63px;
 }
 
 .range-controls {
     position: relative;
-    height: 41px;
+    height: 81px;
     margin-bottom: 15px;
     padding-top: 39px;
     padding-right: 20px;
@@ -702,7 +702,7 @@ header {
 
 .price-controls input {
     width: 60px;
-    padding: 8px 10px;
+    padding: 8px 7px;
     margin-left: 10px;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
@@ -717,74 +717,22 @@ header {
     text-align: right;
 }
 
-/* .aside-item legend {
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    font-weight: 700; */
+/*ASIDE RADIO */
 
-}
-
-/* .filter-left {
-    background-color: #ffffff;
-    width: 480px;
-    float: left;
-    padding: 0 20px 0 139px;
-    text-transform: none;
-    font-size: 16px;
-    color: #283136;
-}
-
-.aside-item {
-    margin-top: 63px;
-    width: 261px;
+.radio-item {
+    margin: 0;
+    padding: 0;
     border: none;
+    display: inline-block;
+    padding: 0 20px 0 139px;
 }
 
-.aside-item legend {
-    margin-bottom: 9px;
-    margin-left: -13px;
+.radio-item legend {
+    border: none;
+    padding-top: 62px;
     font-size: 18px;
     font-weight: bold;
-    line-height: 30px;
-    color: #000000;
-    text-align: left;
-    text-transform: uppercase;
 }
-
-.aside-item .price {
-    margin-bottom: 50px;
-}
-
-.slider-input {
-    background: #eeeeee;
-    height: 81px;
-    display: flex;
-    justify-content: center;
-    padding: 0 19px;
-    margin-bottom: 13px;
-}
-
-.slider-input input {
-    width: 100%; */
-
-}
-
-/* .slider-controls {
-    text-align: left;
-}
-
-.slider-controls input {
-    background-color: #eeeeee;
-    margin-left: 12px;
-    width: 80px;
-    height: 38px;
-    border: none;
-    border-radius: 4px;
-    text-align: center;
-} */
-
-/*ASIDE RADIO */
 
 .radio-input {
     position: absolute;
@@ -807,16 +755,16 @@ header {
 }
 
 .grid-label {
-    display: block;
+    display: flex;
     width: 100%;
-    padding-left: 25px;
+    padding-left: 35px;
     padding-top: 15px;
     text-transform: none;
 }
 
 .check__radio {
     position: absolute;
-    margin-left: -30px;
+    margin-left: -40px;
     width: 25px;
     height: 25px;
     background-repeat: no-repeat;
@@ -825,10 +773,24 @@ header {
 
 /*ASIDE CHECKBOX*/
 
-.check {
-    display: block;
-    padding-left: 25px;
+.checkbox {
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding: 0 20px 0 139px;
+}
+
+.checkbox legend {
+    padding-top: 51px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkbox-list {
+    padding-left: 35px;
     padding-top: 15px;
+    text-transform: none;
+    line-height: 30px;
 }
 
 .check__input {
@@ -840,7 +802,7 @@ header {
 
 .check__box {
     position: absolute;
-    margin-left: -30px;
+    margin-left: -40px;
     width: 23px;
     height: 23px;
     background-repeat: no-repeat;
@@ -861,7 +823,7 @@ header {
     text-align: left;
     font-size: 18px;
     line-height: 18px;
-    vertical-align: middle;
+    margin: 0px;
 }
 
 .sort h4 {
@@ -877,8 +839,13 @@ header {
     color: rgba(0, 0, 0, .3);
     line-height: 18px;
     text-align: left;
-    margin-left: 6px;
+    margin-left: 19px;
     /* cursor: pointer; */
+}
+
+.sort .price-current {
+    color: #000000;
+    padding-left: 5px;
 }
 
 .sort p:hover {
@@ -895,34 +862,32 @@ header {
 
 .sort-icons {
     display: inline-block;
-    width: 30px;
-    height: 10px;
-    margin-top: 32px;
-}
-
-.sort-icons p {
-    display: block;
-    width: 11px;
-    height: 10px;
+    width: 50px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
 }
 
 .sort-icon-down {
+    width: 11px;
+    height: 10px;
+    margin-top: 10px;
     background-image: url("../img/icon-down-dir.png");
-    background-repeat: no-repeat;
-    /* margin-left: 776px; */
-    margin-top: 0;
 }
 
 .sort-icon-up {
+    width: 11px;
+    height: 10px;
+    margin-top: -10px;
+    margin-left: 25px;
     background-image: url("../img/icon-up-dir.png");
-    margin-top: -23px;
 }
 
 /* CATALOG */
 
 .catalog-container {
     display: inline-block;
-    width: 960px;
+    width: 900px;
 }
 
 .catalogs ul {
@@ -942,7 +907,7 @@ header {
 
 .catalog-header {
     height: 40px;
-    background: url("../img/browser.png");
+    background: url("../img/browser-hover.png");
 }
 
 .catalog-body {

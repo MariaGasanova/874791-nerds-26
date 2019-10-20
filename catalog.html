@@ -43,166 +43,106 @@
 
     <main class="container">
         <aside class="filter-fields">
-
-            <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset class="filter-item">
-                    <legend>Стоимость:</legend>
-                    <div class="range-filter">
-                        <div class="range-controls">
-                            <div class="scale">
-                                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            <div>
+                <form method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="filter-item">
+                        <legend>Стоимость:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar" style="margin-left: 0%; width: 40%"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
                             </div>
-                            <div class="toggle toggle-min"></div>
-                            <div class="toggle toggle-max"></div>
-                        </div>
 
-                        <div class="price-controls">
-                            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                            <div class="price-controls">
+                                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                            </div>
                         </div>
+                    </fieldset>
+
+                    <fieldset class="radio-item">
+                        <legend>Сетка:</legend>
+                        <div class="grid-list">
+                            <div class="grid-label">
+                                <label>
+                                    <input class="radio-input" type="radio" checked>
+                                    <span class="check__radio"></span>
+                                </label>
+                                Адаптивная
+                            </div>
+                            <div class="grid-label">
+                                <label>
+                                    <input class="radio-input" type="radio">
+                                    <span class="check__radio"></span>
+                                </label>
+                                Фиксированная
+                            </div>
+                            <div class="grid-label">
+                                <label>
+                                    <input class="radio-input" type="radio">
+                                    <span class="check__radio"></span>
+                                </label>
+                                Резиновая
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="checkbox">
+                        <legend>Особенности:</legend>
+                        <div class="checkbox-list">
+                            <div class="check option">
+                                <label>
+                                    <input class="check__input" type="checkbox" checked>
+                                    <span class="check__box"></span>
+                                    Слайдер
+                                </label>
+
+                            </div>
+
+                            <div class="check option">
+                                <label>
+                                    <input class="check__input" type="checkbox">
+                                    <span class="check__box"></span>
+                                    Блок преимуществ
+                                </label>
+
+                            </div>
+
+                            <div class="check option">
+                                <label>
+                                    <input class="check__input" type="checkbox" checked>
+                                    <span class="check__box"></span>
+                                    Новости
+                                </label>
+                            </div>
+
+                            <div class="check option">
+                                <label>
+                                    <input class="check__input" type="checkbox">
+                                    <span class="check__box"></span>
+                                    Галерея
+                                </label>
+
+                            </div>
+
+                            <div class="check option">
+                                <label>
+                                    <input class="check__input" type="checkbox">
+                                    <span class="check__box"></span>
+                                    Корзина
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="filter-filds-button">
+                        <button class="button button-grey" type="submit">Показать</button>
                     </div>
-                </fieldset>
 
-                <fieldset class="radio-item">
-                    <legend>Сетка:</legend>
-                    <div class="grid-list">
-                        <div class="grid-label">
-                            <label><input class="radio-input" type="radio" checked></label>
-                            <label><span class="check__radio"></span></label>
-                            Адаптивная
-                        </div>
-                        <div class="grid-label">
-                            <label><input class="radio-input" type="radio"></label>
-                            <label><span class="check__radio"></span></label>
-                            Фиксированная
-                        </div>
-                        <div class="grid-label">
-                            <label><input class="radio-input" type="radio"></label>
-                            <label><span class="check__radio"></span></label>
-                            Резиновая
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset class="checkbox">
-                    <legend>Особенности:</legend>
-                    <div class="checkbox-list">
-                        <label class="check option">
-                            <input class="check__input" type="checkbox" checked>
-                            <span class="check__box"></span>
-                            Слайдер
-                        </label>
-
-                        <label class="check option">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            Блок преимуществ
-                        </label>
-
-                        <label class="check option">
-                            <input class="check__input" type="checkbox" checked>
-                            <span class="check__box"></span>
-                            Новости
-                        </label>
-
-                        <label class="check option">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            Галерея
-                        </label>
-
-                        <label class="check option">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            Корзина
-                        </label>
-                    </div>
-                </fieldset>
-                <button class="button button-grey" type="submit">Показать</button>
-            </form>
-
-        </aside>
-
-
-
-
-        <!-- <aside class="filter-left">
-            <fieldset class="slider aside-item">
-                <legend class="price">Стоимость:</legend>
-                <div class="slider-input">
-                    <input class="slider-range" type="range" id="slider" min="0" max="1500">
-                    <span class="slider__move"></span>
-                </div>
-
-                <div class="slider-controls">
-                    <label>
-                        <span>от</span>
-                        <input class="price-from" type="number" min="0" max="1500" placeholder="0">
-                        <span>до</span>
-                        <input class="price-to" type="number" min="0" max="1500" placeholder="1500">
-                    </label>
-
-                </div>
-            </fieldset> -->
-
-        <!-- <fieldset class="radio aside-item">
-
-            <legend>Сетка:</legend>
-            <div class="grid-list">
-                <label class="grid-label">
-                    <input class="radio-input" type="radio" checked>
-                    <span class="check__radio"></span>
-                    Адаптивная
-                </label>
-                <label class="grid-label">
-                    <input class="radio-input" type="radio">
-                    <span class="check__radio"></span>
-                    Фиксированная
-                </label>
-                <label class="grid-label">
-                    <input class="radio-input" type="radio">
-                    <span class="check__radio"></span>
-                    Резиновая
-                </label>
+                </form>
             </div>
-        </fieldset> -->
-
-        <!-- <fieldset class="checkbox  aside-item">
-
-            <legend>Особенности:</legend>
-            <div class="checkbox-list">
-                <label class="check option">
-                    <input class="check__input" type="checkbox" checked>
-                    <span class="check__box"></span>
-                    Слайдер
-                </label>
-
-                <label class="check option">
-                    <input class="check__input" type="checkbox">
-                    <span class="check__box"></span>
-                    Блок преимуществ
-                </label>
-
-                <label class="check option">
-                    <input class="check__input" type="checkbox" checked>
-                    <span class="check__box"></span>
-                    Новости
-                </label>
-
-                <label class="check option">
-                    <input class="check__input" type="checkbox">
-                    <span class="check__box"></span>
-                    Галерея
-                </label>
-
-                <label class="check option">
-                    <input class="check__input" type="checkbox">
-                    <span class="check__box"></span>
-                    Корзина
-                </label>
-            </div>
-        </fieldset> -->
-
         </aside>
 
         <div class="catalog-container">
@@ -210,135 +150,135 @@
                 <div>
                     <h4>СОРТИРОВАТЬ:</h4>
                 </div>
+
                 <div>
-                    <p class="price">По цене</p>
+                    <p class="price price-current">По цене</p>
                     <p class="type">По типу</p>
                     <p class="name">По названию</p>
                 </div>
 
                 <div class="sort-icons">
-                    <p class="sort-icon-down"></p>
-                    <p class="sort-icon-up"></p>
+                    <div class="sort-icon-down"></div>
+                    <div class="sort-icon-up"></div>
                 </div>
+            </div>
+
+            <div class="catalogs">
+
+                <div class="catalog">
+
+                    <div class="catalog-header"></div>
+
+                    <div class="catalog-body catalog-1">
+
+                        <section class="catalog-offer">
+                            <h4 class="catalog-item">Sedona</h4>
+                            <p>Информационный сайт <br>для туристов</p>
+                            <div class="catalog-button">
+                                <a class="button button-catalog" href="#">9 900 руб.</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="catalog">
+                    <div class="catalog-header"></div>
+
+                    <div class="catalog-body catalog-2">
+
+                        <section class="catalog-offer">
+                            <h4 class="catalog-item">Pink App</h4>
+                            <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
+                            <div class="catalog-button">
+                                <a class="button button-catalog" href="#">9 900 руб.</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="catalog">
+
+                    <div class="catalog-header"></div>
+
+                    <div class="catalog-body catalog-3">
+
+                        <section class="catalog-offer">
+                            <h4 class="catalog-item">Barbershop</h4>
+                            <p>Сайт салона красоты.<br>Для мужчин,да.</p>
+                            <div class="catalog-button">
+                                <a class="button button-catalog" href="#">9 900 руб.</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="catalog">
+
+                    <div class="catalog-header"></div>
+
+                    <div class="catalog-body catalog-4">
+
+                        <section class="catalog-offer">
+                            <h4 class="catalog-item">MISHKA</h4>
+                            <p>Интернет-магазин<br>вязаных игрушек</p>
+                            <div class="catalog-button">
+                                <a class="button button-catalog" href="#">9 900 руб.</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="catalog">
+
+                    <div class="catalog-header"></div>
+
+                    <div class="catalog-body catalog-5">
+
+                        <section class="catalog-offer">
+                            <h4 class="catalog-item">A Plus</h4>
+                            <p>Лендинг курсов повышения<br>квалификации</p>
+                            <div class="catalog-button">
+                                <a class="button button-catalog" href="#">9 900 руб.</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="catalog">
+
+                    <div class="catalog-header"></div>
+
+                    <div class="catalog-body catalog-6">
+
+                        <section class="catalog-offer">
+                            <h4 class="catalog-item">КВАСТ</h4>
+                            <p>Промо-сайт производителя<br>крафтового кваса</p>
+                            <div class="catalog-button">
+                                <a class="button button-catalog" href="#">9 900 руб.</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <ul class="page">
+                    <li>
+                        <a class="page-button first">1</a>
+                    </li>
+                    <li>
+                        <a class="page-button second" href="#">2</a>
+                    </li>
+                    <li>
+                        <a class="page-button third" href="#">3</a>
+                    </li>
+                    <li>
+                        <a class="page-button next" href="#">Следующая</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
-
-        <div class="catalogs">
-
-            <div class="catalog">
-
-                <div class="catalog-header"></div>
-
-                <div class="catalog-body catalog-1">
-
-                    <section class="catalog-offer">
-                        <h4 class="catalog-item">Sedona</h4>
-                        <p>Информационный сайт <br>для туристов</p>
-                        <div class="catalog-button">
-                            <a class="button button-catalog" href="#">9 900 руб.</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-            <div class="catalog">
-                <div class="catalog-header"></div>
-
-                <div class="catalog-body catalog-2">
-
-                    <section class="catalog-offer">
-                        <h4 class="catalog-item">Pink App</h4>
-                        <p>Продуктовый лендинг <br>приложения для iOS и Android</p>
-                        <div class="catalog-button">
-                            <a class="button button-catalog" href="#">9 900 руб.</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-            <div class="catalog">
-
-                <div class="catalog-header"></div>
-
-                <div class="catalog-body catalog-3">
-
-                    <section class="catalog-offer">
-                        <h4 class="catalog-item">Barbershop</h4>
-                        <p>Сайт салона красоты.<br>Для мужчин,да.</p>
-                        <div class="catalog-button">
-                            <a class="button button-catalog" href="#">9 900 руб.</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-            <div class="catalog">
-
-                <div class="catalog-header"></div>
-
-                <div class="catalog-body catalog-4">
-
-                    <section class="catalog-offer">
-                        <h4 class="catalog-item">MISHKA</h4>
-                        <p>Интернет-магазин<br>вязаных игрушек</p>
-                        <div class="catalog-button">
-                            <a class="button button-catalog" href="#">9 900 руб.</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-            <div class="catalog">
-
-                <div class="catalog-header"></div>
-
-                <div class="catalog-body catalog-5">
-
-                    <section class="catalog-offer">
-                        <h4 class="catalog-item">A Plus</h4>
-                        <p>Лендинг курсов повышения<br>квалификации</p>
-                        <div class="catalog-button">
-                            <a class="button button-catalog" href="#">9 900 руб.</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-
-            <div class="catalog">
-
-                <div class="catalog-header"></div>
-
-                <div class="catalog-body catalog-6">
-
-                    <section class="catalog-offer">
-                        <h4 class="catalog-item">КВАСТ</h4>
-                        <p>Промо-сайт производителя<br>крафтового кваса</p>
-                        <div class="catalog-button">
-                            <a class="button button-catalog" href="#">9 900 руб.</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <ul class="page">
-                <li>
-                    <a class="page-button first">1</a>
-                </li>
-                <li>
-                    <a class="page-button second" href="#">2</a>
-                </li>
-                <li>
-                    <a class="page-button third" href="#">3</a>
-                </li>
-                <li>
-                    <a class="page-button next" href="#">Следующая</a>
-                </li>
-            </ul>
-        </div>
-        </div>
         <!---
         <section class="contacts">
             <p>NЁRDS DESIGN STUDIO 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75
