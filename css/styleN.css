@@ -64,17 +64,16 @@ a {
 
 /*----- HEADER ------*/
 
-/* header {
-    width: 100%;
-    padding: 49px 140px 0 140px;
-    vertical-align: middle;
-    background-color: #eeeeee; */
-
+header {
+    /* width: 100%;
+    /* padding: 49px 140px 0 140px; */
+    /* vertical-align: middle; */
+    background-color: #eeeeee;
 }
 
 .main-navigation {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     font-size: 16px;
     line-height: 30px;
@@ -82,26 +81,35 @@ a {
     color: #000000;
 }
 
-/* .main-navigation a {
-    color: #000000;
-} */
-
 .main-header-logo {
-    background-color: #eeeeee;
     width: 160;
     height: 65;
-    /* vertical-align: middle;
-    display: inline-block; */
+    margin: 0;
+    padding: 0;
+    padding-top: 58px;
+    padding-left: 75px;
+}
+
+.logo-wrapper {
+    width: 20%;
+}
+
+.logo-wrapper, .main-navigation-wrapper {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .main-navigation-wrapper {
-    width: 100%;
-    margin-top: 49px;
+    width: 70%;
 }
 
 .main-navigation-wrapper .container {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    /* margin-left: 140px; */
 }
 
 .site-navigation, .basket {
@@ -129,14 +137,13 @@ a {
 .basket-icon::before {
     content: "";
     position: absolute;
-    top: 87px;
+    top: 90px;
     left: -15px;
     width: 15px;
     height: 15px;
     background-image: url("../img/basket-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    background-color: #a6a6a6;
     opacity: 0.3;
 }
 
