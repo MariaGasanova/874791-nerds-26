@@ -826,17 +826,39 @@ header {
     appearance: none;
 }
 
+.radio-input:disabled :hover {
+    color: rgba(40, 49, 54, 0.3);
+}
+
+.radio-input+.check__radio:disabled {
+    /* color: rgba(40, 49, 54, 0.3); */
+    background-image: url("../img/radio-off-disabled.png");
+}
+
+.radio-input+.check__radio:hover:disabled {
+    color: rgba(40, 49, 54, 0.3);
+    background-image: url("../img/radio-on-disabled.png");
+}
+
+.radio-input+.check__radio {
+    background-image: url("../img/radio-off-first.png");
+}
+
+.radio-input+.check__radio:hover {
+    background-image: url("../img/radio-off-hover.png");
+}
+
 .radio-input:checked+.check__radio {
-    background-image: url("../img/radio-on.png");
+    background-image: url("../img/radio-on-first.png");
+}
+
+.radio-input:checked+.check__radio:hover {
+    background-image: url("../img/radio-on-hover.png");
 }
 
 .grid-list {
     margin: 0;
     padding: 0;
-}
-
-.grid-list input:hover {
-    background-image: url("../img/radio-on-hover.png");
 }
 
 .grid-label {
@@ -845,6 +867,7 @@ header {
     padding-left: 35px;
     padding-top: 15px;
     text-transform: none;
+    color: #283136;
 }
 
 .check__radio {
@@ -852,8 +875,6 @@ header {
     margin-left: -40px;
     width: 25px;
     height: 25px;
-    background-repeat: no-repeat;
-    background-image: url("../img/radio-off.png");
 }
 
 /*ASIDE CHECKBOX*/
