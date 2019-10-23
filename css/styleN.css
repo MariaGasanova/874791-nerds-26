@@ -1062,6 +1062,7 @@ header {
 
 .catalog:hover .catalog-offer {
     display: block;
+    transition: 1s;
 }
 
 .catalog-current .catalog-header {
@@ -1173,6 +1174,7 @@ header {
     display: inline-block;
     margin-top: 62px;
     margin-left: 25px;
+    background-color: #ffffff;
 }
 
 .page a {
@@ -1200,7 +1202,7 @@ header {
     width: 50px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid #eeeeee;
+    border: 3px solid #ffffff;
     border-radius: 4px;
 }
 
@@ -1208,7 +1210,7 @@ header {
     width: 50px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid #eeeeee;
+    border: 3px solid #ffffff;
     border-radius: 4px;
 }
 
@@ -1216,7 +1218,7 @@ header {
     width: 260px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid #eeeeee;
+    border: 3px solid #ffffff;
     border-radius: 4px;
     padding-left: 78px;
 }
@@ -1224,11 +1226,30 @@ header {
 .page-button>li {
     display: inline-block;
     border: 2px solid #e1e1e1;
-    background-color: #e1e1e1;
+    background-color: #eeeeee;
     width: 50px;
     height: 50px;
     text-align: center;
     padding-top: 8px;
+}
+
+.page-button-current {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.page-button:hover {
+    background-color: #dfdfdf;
+}
+
+.page-button:focus {
+    background-color: #d5d5d5;
+    box-shadow: inset 0px 3px 0 0;
+    color: rgba(0, 0, 0, .3);
+}
+
+.page-button:active {
+    background-color: rgba(0, 1, 1, .1);
 }
 
 .page-button .next {
