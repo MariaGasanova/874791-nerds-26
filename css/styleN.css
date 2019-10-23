@@ -62,6 +62,16 @@ a {
     margin-left: 135px;
 }
 
+.button-grey:hover {
+    background-color: #dfdfdf;
+}
+
+.button-grey:focus {
+    box-shadow: inset 0px 3px 0 0;
+    color: rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+
 /*----- HEADER ------*/
 
 header {
@@ -82,12 +92,22 @@ header {
 }
 
 .main-header-logo {
-    width: 160;
-    height: 65;
-    margin: 0;
+    width: 160px;
+    height: 65px;
+    margin: 58px 0 0 75px;
     padding: 0;
-    padding-top: 58px;
-    padding-left: 75px;
+    /* padding-top: 58px;
+    padding-left: 75px; */
+    background-repeat: no-repeat;
+    background-image: url("../img/nerds-logo-first.png");
+}
+
+.main-header-logo:hover {
+    background-image: url("../img/nerds-logo-hover.png");
+}
+
+.main-header-logo:focus {
+    background-image: url("../img/nerds-logo-focus.png");
 }
 
 .logo-wrapper {
@@ -152,7 +172,7 @@ header {
 }
 
 .basket-icon:hover::before, .basket-icon:focus::before, .basket-icon:active::before {
-    opacity: 1;
+    opacity: 0.3;
 }
 
 .container {
