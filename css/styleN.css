@@ -182,7 +182,7 @@ header {
 }
 
 .site-navigation a, .basket a {
-    display: block;
+    display: flex;
     color: #000000;
     padding: 83px 47px;
     vertical-align: middle;
@@ -1026,8 +1026,6 @@ header {
 /* CATALOG */
 
 .catalog-container {
-    /* /* display: inline-block; */
-    /* width: 900px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1044,15 +1042,8 @@ header {
 .catalog {
     width: 360px;
     min-height: 576px;
+    border: rgba(77, 77, 77, 0.1);
 }
-
-/* .catalog .catalog-offer {
-    display: block;
-}
-
-.catalog .catalog-header {
-    background-image: url("../img/browser-hover.png");
-} */
 
 .catalog .catalog-offer {
     display: none;
@@ -1065,10 +1056,24 @@ header {
 
 .catalog:hover .catalog-header {
     background-image: url("../img/browser.png");
+    box-shadow: rgba(0, 1, 1, 0.25);
+    border: rgba(77, 77, 77, 0.1);
 }
 
 .catalog:hover .catalog-offer {
     display: block;
+}
+
+.catalog-current .catalog-header {
+    background: url("../img/browser.png");
+}
+
+.catalog-current .catalog-offer {
+    display: block;
+}
+
+.catalog-header {
+    background-color: #ffffff;
 }
 
 .catalog-body {
@@ -1106,6 +1111,8 @@ header {
     background: #eeeeee;
     height: 231px;
     position: absolute;
+    margin-top: 24px;
+    padding-top: 12px;
 }
 
 .catalog-offer h4 {
@@ -1113,7 +1120,15 @@ header {
     font-weight: bold;
     text-align: center;
     color: #000000;
-    padding-top: 35px;
+    padding-top: 0px;
+}
+
+.catalog-offer h4:hover {
+    color: #fb565a;
+}
+
+.catalog-offer h4:focus, .catalog-offer h4:active {
+    color: rgba(0, 0, 0, .3)
 }
 
 .catalog-offer p {
@@ -1137,6 +1152,21 @@ header {
 
 .catalog-button a {
     display: block;
+}
+
+.catalog-button:hover {
+    background-color: #e74246;
+}
+
+.catalog-button:focus, .catalog-button:active {
+    color: rgba(0, 1, 1, .1);
+    background-color: #d7373b;
+}
+
+.catalog:focus, .catalog:active {
+    box-shadow: inset 0px 3px 0 0;
+    color: rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
 }
 
 .page {
