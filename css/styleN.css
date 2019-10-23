@@ -1266,7 +1266,8 @@ header {
 }
 
 .footer-friends {
-    width: 955px;
+    width: 950px;
+    display: block;
 }
 
 .footer-social, .footer-friends {
