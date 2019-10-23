@@ -884,8 +884,9 @@ header {
 /*---CATALOG-----SORT---- */
 
 .sort {
-    display: inline-block;
-    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     font-size: 18px;
     line-height: 18px;
     margin: 0px;
@@ -899,18 +900,15 @@ header {
 }
 
 .sort p {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 14px;
     color: rgba(0, 0, 0, .3);
     line-height: 18px;
     text-align: left;
+    margin-top: 60px;
     margin-left: 19px;
-    /* cursor: pointer; */
-}
-
-.sort .price-current {
-    color: #000000;
-    padding-left: 5px;
 }
 
 .sort p:hover {
@@ -921,31 +919,41 @@ header {
     color: #000000;
 }
 
+.sort .price-current {
+    color: #000000;
+    padding-left: 5px;
+}
+
 .sort>div {
-    display: inline-block;
+    display: flex;
 }
 
 .sort-icons {
-    display: inline-block;
+    display: flex;
     width: 50px;
     height: 20px;
-    margin-top: 30px;
-    margin-left: 40px;
+    margin-top: 58px;
+    margin-left: 20px;
+    color: #a6a6a6;
 }
 
-.sort-icon-down {
-    width: 11px;
-    height: 10px;
-    margin-top: 10px;
-    background-image: url("../img/icon-down-dir.png");
+.sort-down-current {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid;
+    margin-left: 45px;
+    margin-right: 16px;
+    color: #000000;
 }
 
-.sort-icon-up {
-    width: 11px;
-    height: 10px;
-    margin-top: -10px;
-    margin-left: 25px;
-    background-image: url("../img/icon-up-dir.png");
+.sort-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid;
 }
 
 /* CATALOG */
@@ -979,6 +987,7 @@ header {
 .catalog-body {
     padding-top: 320px;
     height: 576px;
+    position: relative;
 }
 
 .catalog-1 {
@@ -1008,6 +1017,8 @@ header {
 .catalog-offer {
     background: #eeeeee;
     height: 231px;
+    /* display: none; */
+    position: absolute;
 }
 
 .catalog-offer h4 {
@@ -1220,4 +1231,72 @@ header {
     background-color: #e1e1e1;
     border-radius: 50%;
     margin-left: 7px;
+}
+
+/* ---ВСПЛЫВАЮЩЕЕ ОКНО---- */
+
+.modal {
+    position: fixed;
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("../img/white-back.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+    box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.write-back-form {
+    top: 240px;
+    left: 240px;
+    width: 960px;
+    height: 590px;
+    margin-left: -230px;
+    padding: 50px 80px;
+}
+
+.write-back-form-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 22px;
+    height: 22px;
+    border: 0;
+    cursor: pointer;
+}
+
+.write-back-form-close::before, .write-back-form-close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 19px;
+    height: 3px;
+    background-color: #e74246;
+}
+
+.write-back-form-close::before {
+    transform: rotate(45deg);
+}
+
+.write-back-form-close::after {
+    transform: rotate(-45deg)
+}
+
+.write-back-form h4 {
+    margin: 0;
+    margin-bottom: 49px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.write-back-form {
+    margin: 0;
+    margin-bottom: 69px;
+}
+
+.write-back-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
 }
