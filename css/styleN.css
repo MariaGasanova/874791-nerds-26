@@ -493,6 +493,7 @@ header {
     position: relative;
     top: -3px;
     padding-left: 5px;
+    margin-right: 25px;
 }
 
 .right-column {
@@ -635,14 +636,31 @@ header {
 }
 
 .contacts-modal {
-    display: block;
+    /* display: block;
     background-image: url("../img/white-back.jpg");
     width: 319px;
     height: 308px;
     margin: 54px 0 54px 140px;
     padding: 0;
     text-align: left;
-    font-weight: normal;
+    font-weight: normal; */
+    position: fixed;
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("../img/white-back.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.contacts-modal {
+    position: sticky;
+    z-index: 15px;
+    left: 140px;
+    top: 500px;
+    width: 319px;
+    height: 308px;
+    top: 240px;
+    left: 240;
 }
 
 .contacts-modal h3 {
@@ -671,22 +689,6 @@ header {
     color: #ffffff;
     background-color: #fb565a;
     border-radius: 5px;
-}
-
-.write-back-form {
-    width: 960 px;
-    height: 590px;
-}
-
-.write-back-form h4 {
-    color: #000000;
-    font-size: 45px;
-    padding: 73px 0 0 101px;
-}
-
-.write-back-name {
-    font-size: 16px;
-    text-align: left;
 }
 
 /* ASIDE START__SLIDER-------------------------*/
@@ -1197,7 +1199,7 @@ header {
     width: 50px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid #ffffff;
+    border: 3px solid transparent;
     border-radius: 4px;
 }
 
@@ -1205,7 +1207,7 @@ header {
     width: 50px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid #ffffff;
+    border: 3px solid transparent;
     border-radius: 4px;
 }
 
@@ -1213,7 +1215,7 @@ header {
     width: 260px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid #ffffff;
+    border: 3px solid transparent;
     border-radius: 4px;
     padding-left: 78px;
 }
@@ -1221,7 +1223,7 @@ header {
 .page-button>li {
     display: inline-block;
     border: 2px solid #e1e1e1;
-    background-color: #eeeeee;
+    background-color: transparent;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -1349,9 +1351,11 @@ header {
     fill: rgba(0, 1, 1, 0.1);
 }
 
+/* Окно на карте */
+
 /* ---ВСПЛЫВАЮЩЕЕ ОКНО---- */
 
-.modal {
+.feedback-form {
     position: fixed;
     color: #000000;
     background-color: #ffffff;
@@ -1361,7 +1365,8 @@ header {
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
-.write-back-form {
+.feedback-form {
+    display: inline-block;
     top: 240px;
     left: 240px;
     width: 960px;
@@ -1370,7 +1375,7 @@ header {
     padding: 50px 80px;
 }
 
-.write-back-form-close {
+.feedback-form-close {
     position: absolute;
     top: 0;
     right: -34px;
@@ -1380,39 +1385,39 @@ header {
     cursor: pointer;
 }
 
-.write-back-form-close::before, .write-back-form-close::after {
+.feedback-form-close::before, .feedback-form-close::after {
     content: "";
     position: absolute;
     top: 10px;
     left: 2px;
     width: 19px;
     height: 3px;
-    background-color: #e74246;
+    background-color: red;
 }
 
-.write-back-form-close::before {
+.feedback-form-close::before {
     transform: rotate(45deg);
 }
 
-.write-back-form-close::after {
-    transform: rotate(-45deg)
+.feedback-form-close::after {
+    transform: rotate(-45deg);
 }
 
-.write-back-form h4 {
+.feedback-form h4 {
     margin: 0;
     margin-bottom: 49px;
     font-size: 45px;
     line-height: 45px;
-}
-
-.write-back-form {
-    margin: 0;
-    margin-bottom: 69px;
-}
-
-.write-back-name {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
     color: #000000;
+    text-transform: none;
+}
+
+.feedback-form ul {
+    list-style: none;
+    text-transform: none;
+}
+
+.feedback-form li {
+    display: flex;
+    flex-direction: column;
 }
