@@ -216,16 +216,35 @@ header {
 
 /*------SLIDES-------------*/
 
-.header-content {
+.container-slides {
     margin: 0;
     padding: 0;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #eeeeee;
 }
 
-.header-slides {
-    width: 100%;
+.slides {
+    width: 420px;
+    background-color: #eeeeee;
+    margin-left: 80px;
+}
+
+.slides .slide1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slides .slide2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slides .slide3 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .slide-content1, .slide-content2, .slide-content3 {
@@ -248,6 +267,7 @@ header {
     border-radius: 5px;
     text-transform: uppercase;
     text-align: center;
+    margin-top: 35px;
     padding-top: 10px;
 }
 
@@ -265,11 +285,15 @@ header {
     font-weight: 500;
     line-height: 55px;
     color: #000000;
-    padding-top: 17px;
+    margin: 0;
+    padding-bottom: 18px;
 }
 
 .slides-picture {
+    max-width: 759px;
     background-color: #eeeeee;
+    margin-right: 190px;
+    margin-top: -55px;
 }
 
 /**SLIDE 1---------------*/
