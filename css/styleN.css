@@ -1270,7 +1270,8 @@ header {
 }
 
 .page-button:active {
-    background-color: rgba(0, 1, 1, .1);
+    /* background-color: rgba(0, 1, 1, .1); */
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .page-button .next {
@@ -1390,26 +1391,32 @@ header {
 }
 
 .feedback-form {
-    display: inline-block;
-    top: 240px;
+    top: 110px;
     left: 240px;
     width: 960px;
     height: 590px;
-    margin-left: -230px;
-    padding: 50px 80px;
+    padding: 5px 80px;
 }
 
-.feedback-form-close {
+.feedback-form h4 {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 35px;
+}
+
+.feedback-button-close {
     position: absolute;
-    top: 0;
-    right: -34px;
+    top: 70px;
+    right: 119px;
     width: 22px;
     height: 22px;
     border: 0;
     cursor: pointer;
 }
 
-.feedback-form-close::before, .feedback-form-close::after {
+.feedback-button-close::before, .feedback-button-close::after {
     content: "";
     position: absolute;
     top: 10px;
@@ -1417,31 +1424,156 @@ header {
     width: 19px;
     height: 3px;
     background-color: red;
+    opacity: 0.3;
 }
 
-.feedback-form-close::before {
+.feedback-button-close::before:hover, .feedback-button-close::after:hover {
+    background-color: red;
+}
+
+.feedback-button-close::before {
     transform: rotate(45deg);
 }
 
-.feedback-form-close::after {
+.feedback-button-close::after {
     transform: rotate(-45deg);
 }
 
-.feedback-form h4 {
+.visually-hidden {
+    display: none;
+}
+
+.feedback-form-elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 760px;
     margin: 0;
-    margin-bottom: 49px;
-    font-size: 45px;
-    line-height: 45px;
-    color: #000000;
-    text-transform: none;
+    padding: 0;
+    margin-right: 100px;
+    margin-bottom: 45px;
 }
 
-.feedback-form ul {
-    list-style: none;
+.feedback-form-elements label {
     text-transform: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 12px;
 }
 
-.feedback-form li {
+.feedback-form-elements input {
+    width: 360px;
+    height: 50px;
+    background-color: #ffffff;
+    font-size: 16px;
+    text-align: left;
+    color: rgba(68, 68, 68, 0.5);
+    border: solid 2px #d7dcde;
+    border-radius: 4px;
+    opacity: 50%;
+    padding-left: 16px;
+}
+
+.feedback-form-elements input:hover {
+    border: solid 2px #b4b9bb;
+}
+
+.feedback-form-elements input:focus {
+    border: solid 2px #000000;
+    outline: none;
+}
+
+.feedback-form-elements input:valid {
+    border: solid 2px #d7dcde;
+}
+
+/* .feedback-form-elements input:invalid {
+    border: solid 2px #e74246;
+    color: #e74246;
+} */
+
+.username {
     display: flex;
     flex-direction: column;
+    margin-bottom: 61px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 61px;
+}
+
+.feedback-message {
+    display: flex;
+    width: 760px;
+    margin: 0;
+    padding: 0;
+    margin-top: -61px;
+}
+
+.feedback-message label {
+    text-transform: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+
+.feedback-message input {
+    width: 760px;
+    height: 118px;
+    background-color: #ffffff;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 0;
+    padding-left: 16px;
+    color: rgba(68, 68, 68, 0.5);
+    opacity: 50%;
+    border: solid 2px #d7dcde;
+    border-radius: 4px;
+}
+
+.feedback-message input:hover {
+    border: solid 2px #b4b9bb;
+}
+
+.feedback-message input:focus {
+    border: solid 2px #000000;
+    outline: none;
+}
+
+.feedback-message input:invalid {
+    border: solid 2px #e74246;
+    color: #e74246;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-submit input {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    background-color: #fb565a;
+    border-radius: 5px;
+    margin-top: 47px;
+    outline: none;
+}
+
+.feedback-submit input:hover {
+    background-color: #e74246;
+}
+
+.feedback-submit input:active {
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
 }

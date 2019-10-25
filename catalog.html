@@ -312,54 +312,42 @@
     <div class="feedback-form">
         <h4>Напишите нам</h4>
         <form action="https=//echo.htmlacademy.ru" method="POST">
-            <div class="feedback-form-element">
+
+            <div class="feedback-form-elements">
                 <div class="username">
-                    <label for="username">Ваше имя:</label><br>
-                    <input type="text" id="username" class="form-element" name="username" placeholder="Имя Фамилия"
+                    <label for="username">Ваше имя:</label>
+                    <input type="name" id="username" class="form-element" name="username" placeholder="Имя Фамилия"
                         value="" required>
-
                 </div>
+
                 <div class="email">
-                    <label for="email">Ваш e-mail:</label><br>
-                    <input type="text" id="email" class="form-element" name="email" placeholder="email@example.com"
+                    <label for="email">Ваш e-mail:</label>
+                    <input type="email" id="email" class="form-element" name="email" placeholder="email@example.com"
                         value="" required>
                 </div>
 
             </div>
-            <div class="feedback-message">
-                <label for="message">Текст письма:</label><br>
-                <input type="text" id="message" class="form-element" name="message" placeholder="В свободной форме">
 
+            <div class="feedback-message">
+                <div class="message">
+                    <label for="message">Текст письма:</label>
+                    <input type="text" id="message" class="form-element" name="message" placeholder="В свободной форме">
+                </div>
             </div>
+
             <div class="feedback-submit">
-                <input type="submit" id="submit-form" name="submit-form" class="submit-button" value="Отправить">
+                <div class="submit-button">
+                    <input type="submit" id="submit-form" name="submit-form" class="submit-button" value="Отправить">
+                </div>
             </div>
         </form>
+        <div class="feedback-button-close">
+            <button class="visually-hidden">Закрыть</button>
+        </div>
+
     </div>
 
-    <!-- <div class="write-back-form modal">
-        <h4>Напишите нам</h4>
-        <form action="https=//echo.htmlacademy.ru" method="POST ">
-            <div class="write-back-name">
-                <label class="write__name" for=" write-back-name">Ваше имя:</label>
-                <input id="write__name" type="text" name="name" placeholder="Имя Фамилия">
-            </div>
-            <div class="write-back-email">
-                <label for="write__email">Ваш e-mail:</label>
-                <input id="write__email" type="text" name="email" placeholder="email@example.com">
-            </div>
-            <div class="write-back-text">
-                <label for="write__text">Текст письма:</label>
-                <input id="write__text" type="text" name="text" placeholder="В свободной форме">
-            </div>
-            <div class="write-back-button">
-                <button class="button" type="submit">Отправить</button>
-            </div>
-        </form>
-        <button class="write-back-form-close">Закрыть</button>
-    </div> -->
-
-    <!-- <footer class="main-footer">
+    <footer class="main-footer">
         <div class="footer-social">
             <ul>
                 <li>
@@ -399,7 +387,7 @@
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
 
-    </footer> -->
+    </footer>
 </body>
 
 </html>
