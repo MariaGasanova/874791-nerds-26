@@ -136,6 +136,7 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
 .site-navigation {
@@ -1532,6 +1533,7 @@ header {
     opacity: 50%;
     border: solid 2px #d7dcde;
     border-radius: 4px;
+    padding-bottom: 65px;
 }
 
 .feedback-message input:hover {
