@@ -284,21 +284,23 @@
         </div>
 
         <section class="contacts">
-            <h2 class="visually-hidden">Раздел контакты</h2>
+            <h3 class="visually-hidden">Контакты и как нас найти</h3>
             <div class="contacts-map">
-
-                <div class="contacts-modal">
-                    <h3>NЁRDS DESIGN STUDIO</h3>
-                    <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-                    <p>тел. +7 (812)275-75-75</p>
-                    <div class="button button-modal">
-                        <a>
-                            <button type="submit">Напишите нам</button>
-                        </a>
-                    </div>
-
-                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002922!2d30.320858715867715!3d59.93871916905448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1sru!2sru!4v1571389353121!5m2!1sru!2sru"
+                    width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
+            <div class="contacts-modal">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел. +7 (812)275-75-75</p>
+                <a class="button button-modal">
+                    <button type="submit">Напишите нам</button>
+                </a>
+            </div>
+            <!-- <div class="contacts-marker">
+                    <img src="img/map-marker.png" alt="Метка на карте">
+                </div> -->
         </section>
     </main>
 
@@ -381,6 +383,71 @@
         </div>
 
     </footer>
+
+    <script>
+
+        var link = document.querySelector('.contacts-modal button');
+
+        var popup = document.querySelector(".feedback-form");
+
+        var close = popup.querySelector(".feedback-button-close");
+        var login = popup.querySelector("[name=username]");
+        var email = popup.querySelector("[name=email]");
+        var isStorageSupport = true;
+        var storage = "";
+
+        try {
+            storage = localStorage.getItem("username");
+        } catch (err) {
+            isStorageSupport = false;
+        }
+
+        link.addEventListener("click", function (evt) {
+            evt.preventDefault();
+
+            console.info('Im am hear')
+
+
+            popup.classList.add("feedback-form-show");
+
+            if (storage) {
+                username.value = storage;
+                email.focus();
+            } else {
+                username.focus();
+            }
+        });
+
+        close.addEventListener("click", function (evt) {
+            evt.preventDefault();
+            popup.classList.remove("feedback-form-show");
+        });
+
+        popup.addEventListener("submit", function (evt) {
+
+            if (!username.value || !email.value) {
+                evt.preventDefault();
+
+                popup.classList.add("feedback-form-error");
+                console.log("Введите имя и email");
+            } else {
+                localStorage.setItem("username", username.value);
+            } if (isStorageSupport) {
+                localStorage.setItem("username", username.value);
+            }
+
+        });
+
+        window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+                evt.preventDefault();
+                if (popup.classList.contains("feedback-form-show")) {
+                    popup.classList.remove("feedback-form-show");
+                    popup.classList.remove("feedback-form-error");
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
