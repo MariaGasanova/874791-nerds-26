@@ -60,13 +60,15 @@ a {
     background-color: #eeeeee;
     margin-top: 25px;
     margin-left: 135px;
+    outline: none;
+    border-radius: 4px;
 }
 
-.button-grey:hover {
+.button-grey:hover, .button-grey:focus {
     background-color: #dfdfdf;
 }
 
-.button-grey:focus {
+.button-grey:active {
     box-shadow: inset 0px 3px 0 0;
     color: rgba(0, 1, 1, 0.1);
     background-color: #d5d5d5;
@@ -344,7 +346,7 @@ a {
     margin-bottom: 38px;
 }
 
-.button {
+.slider-item .button {
     display: block;
     width: 240px;
     padding: 13px 0;
@@ -359,11 +361,11 @@ a {
     border: none;
 }
 
-.button:hover, .button:focus {
+.slider-item .button:hover, .slider-item .button:focus {
     background-color: #e74246;
 }
 
-.button:active {
+.slider-item .button:active {
     background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
@@ -388,10 +390,6 @@ a {
 }
 
 /*--- MAIN END----*/
-
-.paging {
-    display: none;
-}
 
 /*--- ADVANTAGES ---*/
 
@@ -702,7 +700,7 @@ a {
 }
 
 .contacts-map {
-    width: 1440px;
+    width: 100%;
     height: 416px;
     background-color: #b5b5b5;
     margin-top: 60px;
@@ -710,14 +708,6 @@ a {
 }
 
 .contacts-modal {
-    /* display: block;
-    background-image: url("../img/white-back.jpg");
-    width: 319px;
-    height: 308px;
-    margin: 54px 0 54px 140px;
-    padding: 0;
-    text-align: left;
-    font-weight: normal; */
     position: fixed;
     color: #000000;
     background-color: #ffffff;
@@ -830,7 +820,7 @@ a {
     width: 4px;
     height: 4px;
     padding: 0;
-    border: 8px solid #ffffff;
+    border: 10px solid #ffffff;
     background-color: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
@@ -1220,6 +1210,8 @@ a {
     background: #fb565a;
     padding-top: 15px;
     margin: -43px 80px 43px 80px;
+    border-radius: 4px;
+    ;
 }
 
 .catalog-button a {
@@ -1259,13 +1251,13 @@ a {
 .page li {
     display: inline-block;
     padding-top: 10px;
-    padding-left: 16px;
+    padding-left: 19px;
 }
 
 .page .first {
     width: 50px;
     height: 50px;
-    border: 3px solid #dbdbdb;
+    outline: 3px solid #dbdbdb;
     border-radius: 4px;
 }
 
@@ -1273,7 +1265,6 @@ a {
     width: 50px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid transparent;
     border-radius: 4px;
 }
 
@@ -1281,7 +1272,6 @@ a {
     width: 50px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid transparent;
     border-radius: 4px;
 }
 
@@ -1289,7 +1279,6 @@ a {
     width: 260px;
     height: 50px;
     background-color: #eeeeee;
-    border: 3px solid transparent;
     border-radius: 4px;
     padding-left: 78px;
 }
@@ -1297,7 +1286,6 @@ a {
 .page-button>li {
     display: inline-block;
     border: 2px solid #e1e1e1;
-    background-color: transparent;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -1320,13 +1308,7 @@ a {
 }
 
 .page-button:active {
-    /* background-color: rgba(0, 1, 1, .1); */
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-}
-
-.page-button .next {
-    width: 260px;
-    height: 50px;
 }
 
 /* -----------FOOTER-------------*/
@@ -1430,6 +1412,33 @@ a {
 
 /* ---ВСПЛЫВАЮЩЕЕ ОКНО---- */
 
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
 .feedback-form {
     position: fixed;
     color: #000000;
@@ -1438,14 +1447,21 @@ a {
     background-position: 0 0;
     background-repeat: repeat;
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-}
-
-.feedback-form {
+    display: none;
     top: 110px;
     left: 240px;
     width: 960px;
     height: 590px;
     padding: 5px 80px;
+}
+
+.feedback-form-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.feedback-form-error {
+    animation: shake 0.6s;
 }
 
 .feedback-form h4 {
@@ -1533,14 +1549,10 @@ a {
     outline: none;
 }
 
-.feedback-form-elements input:valid {
-    border: solid 2px #d7dcde;
-}
-
-/* .feedback-form-elements input:invalid {
+.feedback-form-elements input:invalid {
     border: solid 2px #e74246;
     color: #e74246;
-} */
+}
 
 .username {
     display: flex;
