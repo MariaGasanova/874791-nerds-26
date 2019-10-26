@@ -1026,7 +1026,6 @@ a {
 
 .sort {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     font-size: 18px;
     line-height: 18px;
@@ -1070,22 +1069,19 @@ a {
 }
 
 .sort-icons {
-    display: flex;
     width: 50px;
     height: 20px;
     margin-top: 58px;
-    margin-left: 20px;
+    margin-left: 50px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.sort-icons:hover {
     color: #a6a6a6;
 }
 
-.sort-down-current {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 10px solid;
-    margin-left: 45px;
-    margin-right: 16px;
+.sort-icons:focus, .sort-icons:active {
     color: #000000;
 }
 
@@ -1094,8 +1090,32 @@ a {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 10px solid;
+    /* border-top: 10px solid; */
+    border-bottom: 10px solid;
 }
+
+.sort-down-current {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid;
+    /* border-bottom: 10px solid; */
+    margin-left: 16px;
+    margin-right: 16px;
+    color: #000000;
+}
+
+/* .sort-current {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: #000000;
+} */
 
 /* CATALOG */
 
@@ -1457,18 +1477,18 @@ a {
 }
 
 .feedback-form {
+    display: none;
     position: fixed;
+    top: 110px;
+    left: 240px;
+    width: 960px;
+    height: 590px;
     color: #000000;
     background-color: #ffffff;
     background-image: url("../img/white-back.jpg");
     background-position: 0 0;
     background-repeat: repeat;
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-    display: none;
-    top: 110px;
-    left: 240px;
-    width: 960px;
-    height: 590px;
     padding: 5px 80px;
 }
 
@@ -1506,12 +1526,16 @@ a {
     left: 2px;
     width: 19px;
     height: 3px;
-    background-color: red;
+    background-color: #fb565a;
     opacity: 0.3;
 }
 
-.feedback-button-close::before:hover, .feedback-button-close::after:hover {
+.feedback-button-close:hover::before, .feedback-button-close:hover::after {
     background-color: red;
+}
+
+.feedback-button-close:active::before, .feedback-button-close:active::after {
+    opacity: 0.1;
 }
 
 .feedback-button-close::before {
