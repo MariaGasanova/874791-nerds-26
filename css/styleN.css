@@ -258,7 +258,43 @@ a {
     cursor: pointer;
 }
 
-.slider-controls label::after {
+.slider-controls i {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.slider-controls i:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.slider-controls .active::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    background-color: inherit;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
+}
+
+/* .slider-controls label::after {
     content: "";
     position: absolute;
     top: 8px;
@@ -268,7 +304,7 @@ a {
     height: 18px;
     background: #ffffff;
     border-radius: 50%;
-}
+} */
 
 .slider-list {
     margin: 0;
@@ -838,6 +874,20 @@ a {
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.range-controls .toggle::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    width: 2px;
+    height: 2px;
+    margin: -3px;
+    background-color: inherit;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
 }
 
 .range-controls .toggle-min {
