@@ -752,7 +752,10 @@ a {
     margin-bottom: 69px;
     top: 0px;
     left: 0;
-    border: none;
+}
+
+.contacts-map iframe {
+    border: 0px;
 }
 
 .contacts-modal {
