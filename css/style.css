@@ -961,34 +961,34 @@ a {
     appearance: none;
 }
 
-.radio-input:disabled+.check__radio {
+.radio-input:disabled+.check-radio {
     color: rgba(40, 49, 54, 0.3);
     background-image: url("../img/radio-off-disabled.png");
 }
 
-.radio-input:disabled:checked+.check__radio {
+.radio-input:disabled:checked+.check-radio {
     color: rgba(40, 49, 54, 0.3);
     background-image: url("../img/radio-on-disabled.png");
 }
 
-.radio-input+.check__radio:hover:disabled {
+.radio-input+.check-radio:hover:disabled {
     color: rgba(40, 49, 54, 0.3);
     background-image: url("../img/radio-on-disabled.png");
 }
 
-.radio-input+.check__radio {
+.radio-input+.check-radio {
     background-image: url("../img/radio-off-first.png");
 }
 
-.radio-input+.check__radio:hover {
+.radio-input+.check-radio:hover {
     background-image: url("../img/radio-off-hover.png");
 }
 
-.radio-input:checked+.check__radio {
+.radio-input:checked+.check-radio {
     background-image: url("../img/radio-on-first.png");
 }
 
-.radio-input:checked+.check__radio:hover {
+.radio-input:checked+.check-radio:hover {
     background-image: url("../img/radio-on-hover.png");
 }
 
@@ -1006,7 +1006,7 @@ a {
     color: #283136;
 }
 
-.check__radio {
+.check-radio {
     position: absolute;
     margin-left: -40px;
     width: 25px;
@@ -1022,7 +1022,7 @@ a {
     padding: 0 20px 0 139px;
 }
 
-.check__box {
+.check-box {
     position: absolute;
     margin-left: -40px;
     width: 23px;
@@ -1044,38 +1044,38 @@ a {
     line-height: 30px;
 }
 
-.check__input {
+.check-input {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
 
-.check__input+.check__box {
+.check-input+.check-box {
     background-image: url("../img/checkbox-off.png");
 }
 
-.check__input:checked+.check__box {
+.check-input:checked+.check-box {
     background-image: url("../img/checkbox-on.png");
     width: 27px;
 }
 
-.check__input+.check__box:hover {
+.check-input+.check-box:hover {
     background-image: url("../img/checkbox-off-hover.png");
     width: 27px;
 }
 
-.check__input:checked+.check__box:hover {
+.check-input:checked+.check-box:hover {
     background-image: url("../img/checkbox-on-hover.png");
     width: 27px;
 }
 
-.check__input:disabled:checked+.check__box {
+.check-input:disabled:checked+.check-box {
     background-image: url("../img/checkbox-off-dis.png");
     color: rgba(40, 49, 54, 0.3);
 }
 
-.check__input:disabled+.check__box {
+.check-input:disabled+.check-box {
     background-image: url("../img/checkbox-on-dis.png");
     color: rgba(40, 49, 54, 0.3);
     width: 27px;
