@@ -136,7 +136,7 @@ a {
 
 .site-navigation {
     display: flex;
-    flex-wrap: no-wrap;
+    /* flex-wrap: wrap; */
     width: 650px;
 }
 
@@ -738,7 +738,7 @@ a {
 }
 
 .contacts-index {
-    top: 1855px;
+    top: 1815px;
 }
 
 .contacts-map {
@@ -752,6 +752,7 @@ a {
     margin-bottom: 69px;
     top: 0px;
     left: 0;
+    border: none;
 }
 
 .contacts-modal {
@@ -1148,22 +1149,10 @@ a {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 10px solid;
-    /* border-bottom: 10px solid; */
     margin-left: 16px;
     margin-right: 16px;
     color: #000000;
 }
-
-/* .sort-current {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 10px solid;
-    margin-left: 16px;
-    margin-right: 16px;
-    color: #000000;
-} */
 
 /* CATALOG */
 
@@ -1198,7 +1187,7 @@ a {
 
 .catalog:hover .catalog-header {
     background-image: url("../img/browser.png");
-    box-shadow: rgba(0, 1, 1, 0.25);
+    opacity: 30%;
     border: rgba(77, 77, 77, 0.1);
 }
 
@@ -1399,7 +1388,7 @@ a {
     flex-direction: row;
     position: absolute;
     width: 100%;
-    top: 2325px;
+    top: 2290px;
     left: 0;
     color: #000000;
     background-image: url("../img/white-back.jpg");
@@ -1528,8 +1517,8 @@ a {
 
 .feedback-form {
     display: none;
-    position: fixed;
-    top: 50px;
+    position: absolute;
+    top: 2574px;
     left: 240px;
     width: 960px;
     height: 590px;
@@ -1540,6 +1529,11 @@ a {
     background-repeat: repeat;
     box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
     padding: 5px 80px;
+}
+
+.feedback-form-index {
+    position: absolute;
+    top: 1670px;
 }
 
 .feedback-form-show {
@@ -1641,8 +1635,7 @@ a {
 }
 
 .feedback-form-elements input:invalid {
-    border: solid 2px #e74246;
-    color: #e74246;
+    border-color: #e74246;
 }
 
 .username {
@@ -1692,12 +1685,12 @@ a {
     border: solid 2px #b4b9bb;
 }
 
-.feedback-message input:focus {
+.feedback-message input:focus:valid {
     border: solid 2px #000000;
     outline: none;
 }
 
-.feedback-message input:invalid {
+.feedback-message input:focus:invalid {
     border: solid 2px #e74246;
     color: #e74246;
 }
