@@ -918,6 +918,7 @@ a {
     width: 50%;
     font-size: 16px;
     text-transform: uppercase;
+    vertical-align: middle;
 }
 
 .price-controls input {
@@ -945,6 +946,7 @@ a {
     border: none;
     display: inline-block;
     padding: 0 20px 0 139px;
+    vertical-align: middle;
 }
 
 .radio-item legend {
@@ -1022,13 +1024,11 @@ a {
     padding: 0 20px 0 139px;
 }
 
-.check-box {
-    position: absolute;
-    margin-left: -40px;
-    width: 23px;
-    height: 23px;
-    background-repeat: no-repeat;
-    /* background-image: url("../img/checkbox-off.png"); */
+.check {
+    padding-left: 35px;
+    padding-top: 15px;
+    text-transform: none;
+    line-height: 30px;
 }
 
 .checkbox legend {
@@ -1037,18 +1037,23 @@ a {
     font-weight: bold;
 }
 
-.checkbox-list {
-    padding-left: 35px;
-    padding-top: 15px;
-    text-transform: none;
-    line-height: 30px;
-}
+/* .checkbox-list {
+   
+} */
 
 .check-input {
     position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+}
+
+.check-box {
+    position: absolute;
+    margin-left: -40px;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
 }
 
 .check-input+.check-box {
@@ -1258,6 +1263,7 @@ a {
     position: absolute;
     margin-top: 24px;
     padding-top: 12px;
+    overflow-y: auto;
 }
 
 .catalog-offer h4 {
@@ -1501,7 +1507,7 @@ a {
 
 /* ---ВСПЛЫВАЮЩЕЕ ОКНО---- */
 
-/* @keyframes bounce {
+@keyframes bounce {
     0% {
         transform: translateY(-2000px);
     }
@@ -1514,7 +1520,7 @@ a {
     100% {
         transform: translateY(0);
     }
-} */
+}
 
 @keyframes shake {
     0%, 100% {
@@ -1649,6 +1655,7 @@ a {
 
 .feedback-form-elements input:invalid {
     border-color: #e74246;
+    color: #e74246;
 }
 
 .username {
