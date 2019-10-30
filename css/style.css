@@ -527,13 +527,6 @@ a {
 
 /*--- ADVANTAGES END ---*/
 
-/* .big-divider {
-    width: 1160px;
-    height: 2px;
-    background: #e1e1e1;
-    background-image: url("../img/divide.png");
-} */
-
 /*-----STUDIO----------*/
 
 .studio {
@@ -554,7 +547,7 @@ a {
     position: absolute;
     right: -10px;
     left: 0px;
-    top: 530px;
+    top: 517px;
     height: 2px;
     background-color: #e1e1e1;
 }
@@ -686,22 +679,12 @@ a {
     position: relative;
 }
 
-/* .link::before {
-    content: "";
-    position: absolute;
-    right: -60px;
-    left: 0px;
-    top: 417px;
-    height: 2px;
-    background-color: #e1e1e1;
-} */
-
 .link::after {
     content: "";
     position: absolute;
     right: -45px;
     left: -30px;
-    top: 130px;
+    top: 123px;
     height: 2px;
     background-color: #e1e1e1;
 }
@@ -716,9 +699,9 @@ a {
 .link-list2::before {
     content: "";
     position: absolute;
-    left: 208px;
+    left: 224px;
     top: 31px;
-    width: 65px;
+    width: 52px;
     height: 2px;
     background-color: #e1e1e1;
     transform: rotate(90deg);
@@ -727,9 +710,9 @@ a {
 .link-list2::after {
     content: "";
     position: absolute;
-    left: 516px;
+    left: 525px;
     top: 31px;
-    width: 65px;
+    width: 52px;
     height: 2px;
     background-color: #e1e1e1;
     transform: rotate(90deg);
@@ -738,9 +721,9 @@ a {
 .link-list3::after {
     content: "";
     position: absolute;
-    left: 795px;
+    left: 818px;
     top: 31px;
-    width: 65px;
+    width: 52px;
     height: 2px;
     background-color: #e1e1e1;
     transform: rotate(90deg);
@@ -760,6 +743,7 @@ a {
 
 .link-list2 a {
     background-image: url("../img/borodinsli-logo-first.png");
+    margin-top: -30px;
 }
 
 .link-list2 a:hover {
@@ -772,6 +756,7 @@ a {
 
 .link-list3 a {
     background-image: url("../img/pink-logo-first.png");
+    margin: 6px 0px 0 30px;
 }
 
 .link-list3 a:hover {
@@ -784,6 +769,7 @@ a {
 
 .link-list4 a {
     background-image: url("../img/mishka-logo-first.png");
+    margin: -10px -20px 0 0px;
 }
 
 .link-list4 a:hover {
@@ -794,10 +780,6 @@ a {
     background-image: url("../img/mishka-logo-focus.png");
 }
 
-.small-divider {
-    width: 2px;
-    height: 52px;
-    background-color: #eeeeee;
 }
 
 /* --------CONTACTS --------*/
