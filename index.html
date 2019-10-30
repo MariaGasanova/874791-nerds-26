@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
@@ -145,7 +146,7 @@
 
             <div class="right-column">
                 <div class="column-picture">
-                    <img src="img/nerds-picture.jpg" alt="Изображение студии Нердс">
+                    <img src="img/nerds-picture.jpg" width="360" height="208" alt="Изображение студии Нердс">
                 </div>
 
                 <div class="column-text">
@@ -175,7 +176,7 @@
 
         <div class="link">
             <div class="link-list1">
-                <a href="https://htmlacademy.ru/"></a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
             </div>
 
             <div class="small-divider"></div>
@@ -299,70 +300,8 @@
 
     </footer>
 
-    <script>
 
-        var link = document.querySelector('.contacts-modal button');
-
-        var popup = document.querySelector(".feedback-form");
-
-        var close = popup.querySelector(".feedback-button-close");
-        var login = popup.querySelector("[name=username]");
-        var email = popup.querySelector("[name=email]");
-        var isStorageSupport = true;
-        var storage = "";
-
-        try {
-            storage = localStorage.getItem("username");
-        } catch (err) {
-            isStorageSupport = false;
-        }
-
-        link.addEventListener("click", function (evt) {
-            evt.preventDefault();
-
-            console.info('Im am hear')
-
-
-            popup.classList.add("feedback-form-show");
-
-            if (storage) {
-                username.value = storage;
-                email.focus();
-            } else {
-                username.focus();
-            }
-        });
-
-        close.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("feedback-form-show");
-        });
-
-        popup.addEventListener("submit", function (evt) {
-
-            if (!username.value || !email.value) {
-                evt.preventDefault();
-
-                popup.classList.add("feedback-form-error");
-                console.log("Введите имя и email");
-            } else {
-                localStorage.setItem("username", username.value);
-            } if (isStorageSupport) {
-                localStorage.setItem("username", username.value);
-            }
-
-        });
-
-        window.addEventListener("keydown", function (evt) {
-            if (evt.keyCode === 27) {
-                evt.preventDefault();
-                if (popup.classList.contains("feedback-form-show")) {
-                    popup.classList.remove("feedback-form-show");
-                    popup.classList.remove("feedback-form-error");
-                }
-            }
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
