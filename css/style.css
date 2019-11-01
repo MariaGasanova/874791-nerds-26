@@ -74,7 +74,7 @@ a {
 
 .main-navigation {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     font-size: 16px;
     background-color: #eeeeee;
     color: #000000;
@@ -102,7 +102,6 @@ a {
 }
 
 .logo-wrapper, .main-navigation-wrapper {
-    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -113,6 +112,7 @@ a {
 
 .main-navigation-wrapper .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
     margin-left: 120px;
@@ -126,7 +126,7 @@ a {
 }
 
 .site-navigation {
-    display: flex;
+    /* display: flex; */
     width: 650px;
 }
 
@@ -330,32 +330,6 @@ a {
     background-position: 100% 20px;
 }
 
-#product-1:checked~.slider-list .slider-item:nth-child(1) {
-    display: block;
-}
-
-#product-2:checked~.slider-list .slider-item:nth-child(2) {
-    display: block;
-}
-
-#product-3:checked~.slider-list .slider-item:nth-child(3) {
-    display: block;
-}
-
-#product-1:checked~.slider-controls .slider-controls-item--1::before, #product-2:checked~.slider-controls .slider-controls-item--2::before, #product-3:checked~.slider-controls .slider-controls-item--3::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 2;
-    width: 4px;
-    height: 4px;
-    margin: -4px;
-    background-color: inherit;
-    border: 2px solid #c1c1c1;
-    border-radius: 50%;
-}
-
 .slider-item h3 {
     max-width: 600px;
     margin: 0;
@@ -427,16 +401,16 @@ a {
 /*--- ADVANTAGES ---*/
 
 .advantages {
-    background-image: url("../img/white-back.jpg");
     font-size: 22px;
     font-weight: bold;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 1100px;
-    height: 100px;
+    min-height: 100px;
+    background-color: #ffffff;
+    background-image: url("../img/white-back.jpg");
     margin: 0 0 325px 5px;
-    margin-bottom: 325px;
     position: relative;
 }
 
@@ -446,7 +420,6 @@ a {
     right: -60px;
     left: 0px;
     top: 425px;
-    /* bottom: 14px; */
     height: 2px;
     background-color: #e1e1e1;
 }
@@ -454,7 +427,6 @@ a {
 .advantage-item {
     background: #e1e1e1;
     width: 300px;
-    /* height: 100px; */
 }
 
 .advantage-content {
@@ -478,6 +450,7 @@ a {
 
 .advantage-item a {
     display: inline-block;
+    vertical-align: auto;
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
