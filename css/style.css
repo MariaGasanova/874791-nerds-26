@@ -1013,7 +1013,7 @@ a {
 }
 
 .check-radio {
-    position: absolute;
+    /* position: absolute; */
     margin-left: -40px;
     width: 25px;
     height: 25px;
@@ -1210,7 +1210,6 @@ a {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    /* border-top: 10px solid; */
     border-bottom: 10px solid;
 }
 
@@ -1256,6 +1255,7 @@ a {
 .catalog .catalog-header {
     height: 40px;
     background: url("../img/browser-hover.png");
+    background-color: #ffffff;
 }
 
 .catalog:hover .catalog-header {
