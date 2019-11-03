@@ -74,7 +74,6 @@ a {
 
 .main-navigation {
     display: flex;
-    /* flex-direction: row; */
     font-size: 16px;
     background-color: #eeeeee;
     color: #000000;
@@ -83,7 +82,7 @@ a {
 .main-header-logo {
     width: 160px;
     height: 65px;
-    margin: 58px 0 0 75px;
+    margin: 58px 0 0 78px;
     padding: 0;
     background-repeat: no-repeat;
     background-image: url("../img/nerds-logo-first.png");
@@ -99,6 +98,8 @@ a {
 
 .logo-wrapper {
     width: 20%;
+    display: flex;
+    line-height: 200px;
 }
 
 .logo-wrapper, .main-navigation-wrapper {
@@ -126,7 +127,8 @@ a {
 }
 
 .site-navigation {
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
     width: 650px;
 }
 
@@ -142,14 +144,14 @@ a {
 
 .basket .basket-icon {
     position: relative;
-    padding-left: 26px;
+    padding-left: 28px;
 }
 
 .basket-icon::before {
     content: "";
     position: absolute;
     top: 93px;
-    left: -15px;
+    left: -12px;
     width: 15px;
     height: 15px;
     background-image: url("../img/basket-icon.svg");
@@ -174,7 +176,7 @@ a {
     padding-top: 89px;
     padding-bottom: 0px;
     margin: 0;
-    margin-left: 22px;
+    margin-left: 20px;
     vertical-align: middle;
 }
 
@@ -190,7 +192,7 @@ a {
     content: "";
     position: absolute;
     right: 0px;
-    bottom: 8px;
+    bottom: -2px;
     left: 44px;
     height: 2px;
     background-color: #fb565a;
@@ -241,10 +243,9 @@ a {
 .slider-controls {
     position: absolute;
     left: 49%;
-    bottom: 115px;
+    bottom: 110px;
     z-index: 100;
     width: 160px;
-    height: 18px;
     text-align: center;
     font-size: 45px;
     transform: translateX(-50%);
@@ -345,13 +346,12 @@ a {
 .slider-item p {
     max-width: 430px;
     margin: 0;
-    margin-top: 28px;
-    margin-bottom: 38px;
+    margin: 28px 0 38px -2px;
 }
 
 .slider-item .button {
     display: block;
-    width: 240px;
+    width: 238px;
     padding: 16px 0;
     font-size: 16px;
     line-height: 18px;
@@ -409,10 +409,9 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1100px;
-    min-height: 100px;
     background-color: #ffffff;
     background-image: url("../img/white-back.jpg");
-    margin: 0 0 325px 5px;
+    margin: 0 0 105px 5px;
     position: relative;
 }
 
@@ -421,13 +420,13 @@ a {
     position: absolute;
     right: -60px;
     left: 0px;
-    top: 425px;
+    bottom: -81px;
     height: 2px;
     background-color: #e1e1e1;
 }
 
 .advantage-item {
-    background: #e1e1e1;
+    background-color: #ffffff;
     width: 300px;
 }
 
@@ -461,7 +460,6 @@ a {
     text-align: center;
     text-transform: uppercase;
     width: 160px;
-    height: 50px;
     border-radius: 4px;
     margin-top: 15px;
     padding-top: 3px;
@@ -512,11 +510,10 @@ a {
 
 .studio {
     display: flex;
-    flex-direction: row;
     background-image: url("../img/white-back.jpg");
     margin: 0;
     margin-bottom: 35px;
-    padding: 40px 0 0 0;
+    padding: 15px 0 0 0;
     width: 100%;
     text-transform: none;
     text-align: left;
@@ -528,7 +525,7 @@ a {
     position: absolute;
     right: -10px;
     left: 0px;
-    top: 522px;
+    top: 500px;
     height: 2px;
     background-color: #e1e1e1;
 }
@@ -588,24 +585,25 @@ a {
 .studio-item2 li::before {
     content: " ";
     height: 1px;
-    width: 25px;
+    width: 23px;
     border-top: 2px solid #fb565a;
     display: inline-block;
     vertical-align: middle;
     position: relative;
     top: -3px;
     padding-left: 2px;
-    margin-right: 4px;
+    margin-right: 10px;
 }
 
 .right-column {
     width: 500px;
+    margin-right: 6px;
 }
 
 .column-picture {
     display: flex;
     width: 360px;
-    margin-left: 140px;
+    margin-left: 142px;
 }
 
 .column-text p {
@@ -620,7 +618,7 @@ a {
 
 .column-items {
     display: flex;
-    margin: -7px 0 0 137px;
+    margin: -7px 0 0 138px;
 }
 
 .column-content {
@@ -629,7 +627,7 @@ a {
     line-height: 18px;
     color: #283136;
     margin: 0px;
-    margin-top: -18px;
+    margin-top: -15px;
     padding: 0;
 }
 
@@ -662,6 +660,7 @@ a {
 
 .link {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -675,7 +674,7 @@ a {
     position: absolute;
     right: -45px;
     left: -30px;
-    top: 124px;
+    bottom: -33px;
     height: 2px;
     background-color: #e1e1e1;
 }
@@ -712,7 +711,7 @@ a {
 .link-list3::after {
     content: "";
     position: absolute;
-    left: 818px;
+    left: 824px;
     top: 31px;
     width: 52px;
     height: 2px;
@@ -747,7 +746,7 @@ a {
 
 .link-list3 a {
     background-image: url("../img/pink-logo-first.png");
-    margin: 6px 0px 0 30px;
+    margin: 6px 0px 0 13px;
 }
 
 .link-list3 a:hover {
@@ -775,19 +774,15 @@ a {
 
 .contacts {
     display: block;
-    width: inherit;
-    min-height: 416px;
-    position: absolute;
-    top: 2659px;
-    left: 0;
+    position: relative;
 }
 
 .contacts-index {
-    top: 1842px;
+    top: 83px;
+    left: -92px;
 }
 
 .contacts-map {
-    position: absolute;
     width: 100%;
     background-color: #ffffff;
     color: #000000;
@@ -795,8 +790,6 @@ a {
     background-position: 0 0;
     background-repeat: repeat;
     margin-bottom: 69px;
-    top: 4px;
-    left: 0;
 }
 
 .contacts-map iframe {
@@ -804,7 +797,7 @@ a {
 }
 
 .contacts-modal {
-    position: relative;
+    position: absolute;
     width: 319px;
     height: 308px;
     top: 40px;
@@ -813,21 +806,22 @@ a {
 }
 
 .modal-index {
-    top: 37px;
+    top: 55px;
+    left: 94px;
 }
 
 .contacts-modal h3 {
     font-size: 18px;
     font-weight: bold;
     color: #000000;
-    padding: 54px 70px 0 50px;
+    padding: 34px 71px 0 50px;
 }
 
 .contacts-modal p {
     font-size: 16px;
     color: #666666;
     text-transform: none;
-    padding-left: 54px;
+    padding-left: 53px;
     margin-top: 5px;
     line-height: 18px;
 }
@@ -839,7 +833,7 @@ a {
 
 .contacts-modal p, .contacts-modal a {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 
 .contacts-modal button {
@@ -851,8 +845,8 @@ a {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    margin-left: 54px;
-    margin-top: 20px;
+    margin-left: 50px;
+    margin-top: 19px;
     background-color: #fb565a;
     border-radius: 4px;
     outline: none;
@@ -879,7 +873,7 @@ a {
 }
 
 .filter-fields {
-    width: 540px;
+    background-color: #ffffff;
 }
 
 .filter-item {
@@ -1017,10 +1011,11 @@ a {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    visibility: hidden;
 }
 
 .check-radio {
-    /* position: absolute; */
+    position: absolute;
     margin-left: -40px;
     width: 25px;
     height: 25px;
@@ -1099,6 +1094,7 @@ a {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    visibility: hidden;
 }
 
 .check-box {
@@ -1325,7 +1321,7 @@ a {
     position: absolute;
     margin-top: 24px;
     padding-top: 4px;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: block;
 }
 
@@ -1469,11 +1465,11 @@ a {
 
 .main-footer {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     position: absolute;
     width: 100%;
-    top: 2335px;
-    left: 0;
+    top: 2332px;
+    left: 4px;
     color: #000000;
     background-image: url("../img/white-back.jpg");
     background-position: 0 0;
@@ -1498,7 +1494,6 @@ a {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
-    margin-left: 20px;
     padding: 0;
     vertical-align: middle;
     position: relative;
@@ -1506,10 +1501,11 @@ a {
 
 .footer-social ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 270px;
     margin: 0 auto;
-    margin-left: 115px;
+    margin-left: 119px;
     padding: 0;
 }
 
@@ -1618,8 +1614,7 @@ a {
 }
 
 .feedback-form-index {
-    position: absolute;
-    top: 1670px;
+    bottom: 2800px;
 }
 
 .feedback-form-show {
