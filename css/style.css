@@ -1470,8 +1470,7 @@ a {
 
 .main-footer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
     color: #000000;
     background-image: url("../img/white-back.jpg");
@@ -1481,20 +1480,11 @@ a {
 }
 
 .catalog-footer {
-    /* top: 3153px; */
     margin-left: -7px;
 }
 
 .footer-social {
-    width: 475px;
-}
-
-.footer-friends {
-    width: 900px;
-}
-
-.footer-social {
-    display: inline-block;
+    /* width: 475px; */
     margin: 0;
     margin-left: 20px;
     padding: 0;
@@ -1503,13 +1493,18 @@ a {
 }
 
 .footer-friends {
+    width: 900px;
+}
+
+.footer-friends {
     margin-left: -11px;
 }
 
 .footer-social ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 270px;
+    justify-content: space-between;
     margin: 0 auto;
     margin-left: 115px;
     padding: 0;
@@ -1517,6 +1512,8 @@ a {
 
 .footer-social li {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer-friends b, .footer-friends p {
@@ -1571,8 +1568,6 @@ a {
 .social-button:active path {
     fill: rgba(0, 1, 1, 0.1);
 }
-
-/* Окно на карте */
 
 /* ---ВСПЛЫВАЮЩЕЕ ОКНО---- */
 
